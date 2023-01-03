@@ -1,0 +1,22 @@
+{
+	"name": "@acdh-oeaw/eslint-config-nuxt",
+	"version": "0.1.0",
+	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"files": [
+		"config.js"
+	],
+	"dependencies": {
+		"eslint-plugin-nuxt": "^4.0.0"
+	},
+	"peerDependencies": {
+		"@acdh-oeaw/eslint-config": "workspace:*",
+		"@acdh-oeaw/eslint-config-vue": "workspace:*"
+	}
+}
