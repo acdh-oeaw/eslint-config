@@ -1,0 +1,16 @@
+{
+	"name": "@acdh-oeaw/eslint-config-vue",
+	"version": "0.1.0",
+	"licence": "MIT",
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"dependencies": {
+		"eslint-plugin-vue": "^9.8.0",
+		"eslint-plugin-vuejs-accessibility": "^2.0.0"
+	},
+	"peerDependencies": {
+		"@acdh-oeaw/eslint-config": "*"
+	}
+}
