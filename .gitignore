@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# logs
+*.logs
+
+# caches
+.eslintcache
+*.tsbuildinfo
+
+# misc
+.DS_Store

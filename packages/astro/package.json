@@ -1,0 +1,22 @@
+{
+	"name": "@acdh-oeaw/eslint-config-astro",
+	"version": "0.1.0",
+	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"files": [
+		"config.js"
+	],
+	"dependencies": {
+		"eslint-plugin-astro": ">=0.27.0",
+		"eslint-plugin-jsx-a11y": "^6.7.1"
+	},
+	"peerDependencies": {
+		"@acdh-oeaw/eslint-config": "workspace:*"
+	}
+}
