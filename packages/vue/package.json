@@ -1,0 +1,22 @@
+{
+	"name": "@acdh-oeaw/eslint-config-vue",
+	"version": "0.1.0",
+	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"files": [
+		"config.js"
+	],
+	"dependencies": {
+		"eslint-plugin-vue": "^9.11.0",
+		"eslint-plugin-vuejs-accessibility": "^2.1.0"
+	},
+	"peerDependencies": {
+		"@acdh-oeaw/eslint-config": "workspace:*"
+	}
+}

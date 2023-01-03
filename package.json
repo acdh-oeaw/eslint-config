@@ -1,0 +1,34 @@
+{
+	"private": true,
+	"license": "MIT",
+	"packageManager": "pnpm@8.5.0",
+	"scripts": {
+		"changeset:add": "changeset add",
+		"changeset:status": "changeset status --verbose",
+		"ci:release": "changeset publish",
+		"format:check": "prettier . --cache --check --ignore-path .gitignore",
+		"format:fix": "pnpm run format:check --write",
+		"prepare": "run-s setup",
+		"setup": "simple-git-hooks || exit 0",
+		"types:check": "tsc --noEmit",
+		"validate": "run-p format:check types:check"
+	},
+	"devDependencies": {
+		"@acdh-oeaw/prettier-config": "^1.0.0",
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.0",
+		"lint-staged": "^13.2.1",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.8.7",
+		"simple-git-hooks": "^2.8.1",
+		"typescript": "^4.9.4"
+	},
+	"lint-staged": {
+		"*": "prettier --cache --ignore-unknown --write"
+	},
+	"prettier": "@acdh-oeaw/prettier-config",
+	"simple-git-hooks": {
+		"pre-commit": "pnpm exec lint-staged",
+		"pre-push": "pnpm run validate"
+	}
+}
