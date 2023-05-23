@@ -15,7 +15,13 @@ const config = {
 			},
 		},
 		{
-			files: ["./*.config.ts", "./*.config.mjs"],
+			files: ["./*.config.ts", "./*.config.js", "./*.config.mjs"],
+			rules: {
+				"import/no-default-export": "off",
+			},
+		},
+		{
+			files: ["./i18n.ts", "./src/i18n.ts"],
 			rules: {
 				"import/no-default-export": "off",
 			},
