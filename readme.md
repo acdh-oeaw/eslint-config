@@ -3,8 +3,12 @@
 Shared configuration presets for [`eslint`](https://eslint.org/).
 
 - `@acdh-oeaw/eslint-config`: recommended base config for typescript projects
-- `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue.js projects
-- `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Vue.js projects
+- `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue 3 projects
+- `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Nuxt 3 projects
+- `@acdh-oeaw/eslint-config-react`: additional recommended config for React projects
+- `@acdh-oeaw/eslint-config-next`: additional recommended config for Next.js projects
+- `@acdh-oeaw/eslint-config-astro`: additional recommended config for Astro projects
+- `@acdh-oeaw/eslint-config-storybook`: additional recommended config for Storybook projects
 
 ## How to install
 
