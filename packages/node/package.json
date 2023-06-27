@@ -1,0 +1,21 @@
+{
+	"name": "@acdh-oeaw/eslint-config-node",
+	"version": "0.1.0",
+	"licence": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"files": [
+		"config.js"
+	],
+	"dependencies": {
+		"eslint-plugin-n": "^16.0.1"
+	},
+	"peerDependencies": {
+		"@acdh-oeaw/eslint-config": "workspace:*"
+	}
+}
