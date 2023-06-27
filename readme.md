@@ -3,6 +3,8 @@
 Shared configuration presets for [`eslint`](https://eslint.org/).
 
 - `@acdh-oeaw/eslint-config`: recommended base config for typescript projects
+- `@acdh-oeaw/eslint-config-node`: additional recommended config for Node.js projects
+- `@acdh-oeaw/eslint-config-vue2`: additional recommended config for Vue 2 projects
 - `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue 3 projects
 - `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Nuxt 3 projects
 - `@acdh-oeaw/eslint-config-react`: additional recommended config for React projects
