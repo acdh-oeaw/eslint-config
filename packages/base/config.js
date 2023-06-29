@@ -53,7 +53,7 @@ const config = {
 			"error",
 			{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 		],
-		"@typescript-eslint/sort-type-union-intersection-members": "error",
+		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
 		"import/consistent-type-specifier-style": ["error", "prefer-inline"],
 		"import/first": "error",
