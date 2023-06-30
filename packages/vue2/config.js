@@ -6,7 +6,7 @@ const config = {
 	overrides: [
 		{
 			files: ["./**/*.vue"],
-			extends: ["plugin:vue/vue-recommended", "plugin:vuejs-accessibility/recommended", "prettier"],
+			extends: ["plugin:vue/recommended", "plugin:vuejs-accessibility/recommended", "prettier"],
 			parserOptions: {
 				parser: "@typescript-eslint/parser",
 			},
