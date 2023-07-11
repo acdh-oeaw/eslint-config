@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-vue2
 
+## 1.0.2
+
+### Patch Changes
+
+- [`e22079c`](https://github.com/acdh-oeaw/eslint-config/commit/e22079c89df40032cef0bb18fefc209104871ac4)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - don't require default values for props
+  in vue
+
 ## 1.0.1
 
 ### Patch Changes
