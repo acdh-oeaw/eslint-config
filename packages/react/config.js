@@ -21,6 +21,7 @@ const config = {
 				"react/boolean-prop-naming": "error",
 				"react/function-component-definition": "error",
 				"react/jsx-no-leaked-render": "error",
+				"react/jsx-no-target-blank": "off",
 				"react/prop-types": "off",
 			},
 		},

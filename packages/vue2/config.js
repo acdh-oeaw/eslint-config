@@ -13,6 +13,7 @@ const config = {
 			rules: {
 				"vue/multi-word-component-names": "off",
 				"vue/padding-line-between-blocks": "error",
+				"vue/require-default-prop": "off",
 				"vuejs-accessibility/label-has-for": [
 					"error",
 					{
