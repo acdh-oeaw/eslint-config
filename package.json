@@ -1,15 +1,15 @@
 {
 	"private": true,
 	"license": "MIT",
-	"packageManager": "pnpm@8.6.7",
+	"packageManager": "pnpm@8.6.9",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
-		"format:check": "prettier . --cache --check --ignore-path .gitignore",
+		"format:check": "prettier . --cache --check --ignore-path ./.gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
-		"setup": "simple-git-hooks || exit 0",
+		"setup": "is-ci || simple-git-hooks",
 		"types:check": "tsc --noEmit",
 		"validate": "run-p format:check types:check"
 	},
@@ -17,6 +17,7 @@
 		"@acdh-oeaw/prettier-config": "^1.0.1",
 		"@changesets/changelog-github": "^0.4.8",
 		"@changesets/cli": "^2.26.2",
+		"is-ci": "^3.0.1",
 		"lint-staged": "^13.2.3",
 		"npm-run-all2": "^6.0.6",
 		"prettier": "^2.8.8",
