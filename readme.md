@@ -35,13 +35,14 @@ Add the configs to `package.json`:
 }
 ```
 
-Optionally, enable additional rules:
+Optionally, enable additional rules, or enable strict preset:
 
 ```json
 {
 	"eslintConfig": {
 		"extends": [
 			"@acdh-oeaw/eslint-config",
+			"@acdh-oeaw/eslint-config/strict",
 			"@acdh-oeaw/eslint-config-vue",
 			"@acdh-oeaw/eslint-config-nuxt"
 		]
