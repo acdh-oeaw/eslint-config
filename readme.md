@@ -3,6 +3,7 @@
 Shared configuration presets for [`eslint`](https://eslint.org/).
 
 - `@acdh-oeaw/eslint-config`: recommended base config for typescript projects
+- `@acdh-oeaw/eslint-config/strict`: enable additional strict rules for typescript projects
 - `@acdh-oeaw/eslint-config-node`: additional recommended config for Node.js projects
 - `@acdh-oeaw/eslint-config-vue2`: additional recommended config for Vue 2 projects
 - `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue 3 projects
@@ -34,13 +35,14 @@ Add the configs to `package.json`:
 }
 ```
 
-Optionally, enable additional rules:
+Optionally, enable additional rules, or enable strict preset:
 
 ```json
 {
 	"eslintConfig": {
 		"extends": [
 			"@acdh-oeaw/eslint-config",
+			"@acdh-oeaw/eslint-config/strict",
 			"@acdh-oeaw/eslint-config-vue",
 			"@acdh-oeaw/eslint-config-nuxt"
 		]
@@ -82,7 +84,7 @@ To run the linter on every Git commit, add the following to package.json:
 		"lint:check": "eslint . --cache --ignore-path .gitignore",
 		"lint:fix": "npm run lint:check -- --fix",
 		"prepare": "npm run setup",
-		"setup": "simple-git-hooks || exit 0",
+		"setup": "is-ci || simple-git-hooks",
 		"validate": "run-p format:check lint:check"
 	},
 	"lint-staged": {

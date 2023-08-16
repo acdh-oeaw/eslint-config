@@ -6,7 +6,8 @@ const config = {
 	reportUnusedDisableDirectives: true,
 	extends: [
 		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-type-checked",
+		"plugin:@typescript-eslint/stylistic-type-checked",
 		"plugin:import/recommended",
 		"plugin:import/typescript",
 		"prettier",
@@ -18,6 +19,7 @@ const config = {
 		node: true,
 	},
 	parserOptions: {
+		ecmaVersion: 2021,
 		project,
 	},
 	settings: {
