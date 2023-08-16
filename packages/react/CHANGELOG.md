@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-react
 
+## 1.0.1
+
+### Patch Changes
+
+- [`15395d8`](https://github.com/acdh-oeaw/eslint-config/commit/15395d876da2b04260cbb3914277be9e147d93a7)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable react/jsx-no-target-blank which
+  is no longer needed
+
 ## 1.0.0
 
 ### Major Changes

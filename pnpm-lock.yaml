@@ -17,6 +17,9 @@ importers:
       '@changesets/cli':
         specifier: ^2.26.2
         version: 2.26.2
+      is-ci:
+        specifier: ^3.0.1
+        version: 3.0.1
       lint-staged:
         specifier: ^14.0.0
         version: 14.0.0
