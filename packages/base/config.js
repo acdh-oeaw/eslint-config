@@ -19,6 +19,7 @@ const config = {
 		node: true,
 	},
 	parserOptions: {
+		ecmaVersion: 2021,
 		project,
 	},
 	settings: {
