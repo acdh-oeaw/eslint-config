@@ -42,6 +42,7 @@ const config = {
 		"no-param-reassign": "error",
 		"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
 		"no-throw-literal": "error",
+		"require-atomic-updates": "error",
 		"@typescript-eslint/array-type": ["error", { default: "generic" }],
 		"@typescript-eslint/consistent-type-exports": [
 			"error",
