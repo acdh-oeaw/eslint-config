@@ -1,5 +1,18 @@
 # @acdh-oeaw/eslint-config-next
 
+## 1.0.4
+
+### Patch Changes
+
+- [`51e4db3`](https://github.com/acdh-oeaw/eslint-config/commit/51e4db327dd5659e82661bfa0b3e456f92d1434c)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow default export on next.js
+  metadata routes
+
+- Updated dependencies
+  [[`7d1be1f`](https://github.com/acdh-oeaw/eslint-config/commit/7d1be1f933410921fb64332dd6ccdff915713b32)]:
+  - @acdh-oeaw/eslint-config@1.0.2
+  - @acdh-oeaw/eslint-config-react@1.0.3
+
 ## 1.0.3
 
 ### Patch Changes
