@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-react",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
