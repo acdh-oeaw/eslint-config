@@ -1,4 +1,4 @@
-const project = ["./tsconfig.json", "./tsconfig.*.json"];
+const project = ["./tsconfig.json"];
 
 /** @type {import('eslint').Linter.Config} */
 const config = {
