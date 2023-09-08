@@ -3,6 +3,22 @@ const config = {
 	parserOptions: {
 		extraFileExtensions: [".astro"],
 	},
+	rules: {
+		/** @see https://github.com/import-js/eslint-import-resolver-typescript/issues/72 */
+		"import/no-unresolved": [
+			"error",
+			{
+				ignore: [
+					"astro:assets",
+					"astro:components",
+					"astro:content",
+					"astro:middleware",
+					"astro:ssr-manifest",
+					"astro:transitions",
+				],
+			},
+		],
+	},
 	overrides: [
 		{
 			files: ["./**/*.astro"],
