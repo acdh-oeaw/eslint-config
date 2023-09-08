@@ -1,5 +1,16 @@
 # @acdh-oeaw/eslint-config
 
+## 1.0.3
+
+### Patch Changes
+
+- [`bf19be4`](https://github.com/acdh-oeaw/eslint-config/commit/bf19be4cce7fc7d3ca96c91afd8b0bff0fb431b5)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - avoid reading tsconfig.\*.json by
+  default
+
+- [`46fc4e1`](https://github.com/acdh-oeaw/eslint-config/commit/46fc4e1c81947d81986390cd0285600665df0c01)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - parse js with typescript parser
+
 ## 1.0.2
 
 ### Patch Changes
