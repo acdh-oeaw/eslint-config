@@ -12,15 +12,7 @@ const config = {
 				"prettier",
 			],
 			parserOptions: {
-				/**
-				 * @see https://github.com/vuejs/vue-eslint-parser/issues/104#issuecomment-875149361
-				 * @see https://github.com/vuejs/vue-eslint-parser/pull/195
-				 */
-				parser: {
-					ts: "@typescript-eslint/parser",
-					js: "@typescript-eslint/parser",
-					"<template>": "espree",
-				},
+				parser: "@typescript-eslint/parser",
 			},
 			rules: {
 				/**
