@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-nuxt",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"

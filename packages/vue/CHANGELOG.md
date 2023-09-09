@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 1.0.5
+
+### Patch Changes
+
+- [`d12dcd6`](https://github.com/acdh-oeaw/eslint-config/commit/d12dcd6ebe10ebd7db3f99106cad10690d5bc740)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - improve vue-eslint-parser performance
+
 ## 1.0.4
 
 ### Patch Changes
