@@ -12,9 +12,27 @@ const config = {
 				"prettier",
 			],
 			parserOptions: {
-				parser: "@typescript-eslint/parser",
+				/**
+				 * @see https://github.com/vuejs/vue-eslint-parser/issues/104#issuecomment-875149361
+				 * @see https://github.com/vuejs/vue-eslint-parser/pull/195
+				 */
+				parser: {
+					ts: "@typescript-eslint/parser",
+					js: "@typescript-eslint/parser",
+					"<template>": "espree",
+				},
 			},
 			rules: {
+				/**
+				 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
+				 */
+				"@typescript-eslint/no-unsafe-argument": "off",
+				"@typescript-eslint/no-unsafe-assignment": "off",
+				"@typescript-eslint/no-unsafe-call": "off",
+				"@typescript-eslint/no-unsafe-declaration-merging": "off",
+				"@typescript-eslint/no-unsafe-enum-comparison": "off",
+				"@typescript-eslint/no-unsafe-member-access": "off",
+				"@typescript-eslint/no-unsafe-return": "off",
 				"vue/multi-word-component-names": "off",
 				"vue/padding-line-between-blocks": "error",
 				"vue/require-default-prop": "off",
