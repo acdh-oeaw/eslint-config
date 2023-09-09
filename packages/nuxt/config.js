@@ -1,5 +1,14 @@
 /** @type {import('eslint').Linter.Config} */
 const config = {
+	settings: {
+		/** @see https://github.com/nuxt/nuxt/issues/22994 */
+		"import/resolver": {
+			typescript: {
+				project: "./.nuxt/tsconfig.json",
+				alwaysTryTypes: true,
+			},
+		},
+	},
 	overrides: [
 		{
 			files: ["./**/*.vue"],
