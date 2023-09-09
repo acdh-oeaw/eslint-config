@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-nuxt
 
+## 1.0.6
+
+### Patch Changes
+
+- [`b639eb2`](https://github.com/acdh-oeaw/eslint-config/commit/b639eb2ea19b6ad0901eb4b9ccb24c5c6041e125)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - work around import path resolving issue
+  in nuxt 3.7
+
+- Updated dependencies
+  [[`d32711f`](https://github.com/acdh-oeaw/eslint-config/commit/d32711f1ae4d0f563e0ff3e340bd68e154124a4a)]:
+  - @acdh-oeaw/eslint-config-vue@1.0.6
+
 ## 1.0.5
 
 ### Patch Changes
