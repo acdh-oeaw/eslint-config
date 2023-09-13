@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-nuxt
 
+## 1.0.7
+
+### Patch Changes
+
+- [`4414d83`](https://github.com/acdh-oeaw/eslint-config/commit/4414d83689270fbeee0ccab7c037eba91814e007)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow single emit function as
+  defineEmits interface
+
 ## 1.0.6
 
 ### Patch Changes
