@@ -25,6 +25,12 @@ const config = {
 				"@typescript-eslint/no-unsafe-enum-comparison": "off",
 				"@typescript-eslint/no-unsafe-member-access": "off",
 				"@typescript-eslint/no-unsafe-return": "off",
+				"vue/component-tags-order": [
+					"error",
+					{
+						order: ["script", "template", "style"],
+					},
+				],
 				"vue/multi-word-component-names": "off",
 				"vue/padding-line-between-blocks": "error",
 				"vue/require-default-prop": "off",
