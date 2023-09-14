@@ -50,6 +50,7 @@ const config = {
 		],
 		"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
 		"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
+		"@typescript-eslint/no-import-type-side-effects": "error",
 		"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
 		"@typescript-eslint/no-unnecessary-condition": "error",
 		"@typescript-eslint/no-unused-vars": [
@@ -58,7 +59,6 @@ const config = {
 		],
 		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
-		"import/consistent-type-specifier-style": ["error", "prefer-inline"],
 		"import/first": "error",
 		"import/newline-after-import": "error",
 		"import/no-anonymous-default-export": "error",
