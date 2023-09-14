@@ -34,6 +34,12 @@ const config = {
 				"vue/multi-word-component-names": "off",
 				"vue/padding-line-between-blocks": "error",
 				"vue/require-default-prop": "off",
+				"vuejs-accessibility/anchor-has-content": [
+					"error",
+					{
+						components: ["RouterLink"],
+					},
+				],
 				"vuejs-accessibility/label-has-for": [
 					"error",
 					{
