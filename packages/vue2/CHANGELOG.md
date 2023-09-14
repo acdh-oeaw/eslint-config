@@ -1,5 +1,16 @@
 # @acdh-oeaw/eslint-config-vue2
 
+## 1.0.9
+
+### Patch Changes
+
+- [`d5d621d`](https://github.com/acdh-oeaw/eslint-config/commit/d5d621d36d98902e9fc7b0ad083d7345e281162b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enforce vue sfc block order
+
+- [`19d4ec3`](https://github.com/acdh-oeaw/eslint-config/commit/19d4ec33d1913cd9a70437dfffe44208ae3b9ffa)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - ensure client side links have text
+  content
+
 ## 1.0.8
 
 ### Patch Changes
