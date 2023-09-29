@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-next
 
+## 1.0.7
+
+### Patch Changes
+
+- [`7dbb93f`](https://github.com/acdh-oeaw/eslint-config/commit/7dbb93f243d32ada359ad51329769d6607bcb858)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow moving i18n config to lib folder
+
 ## 1.0.6
 
 ### Patch Changes
