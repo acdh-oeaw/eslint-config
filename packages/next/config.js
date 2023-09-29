@@ -21,7 +21,7 @@ const config = {
 			},
 		},
 		{
-			files: ["./i18n.ts", "./src/i18n.ts"],
+			files: ["./i18n.ts", "./lib/i18n.ts", "./src/i18n.ts", "./src/lib/i18n.ts"],
 			rules: {
 				"import/no-default-export": "off",
 			},
