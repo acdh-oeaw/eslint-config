@@ -12,6 +12,7 @@ Shared configuration presets for [`eslint`](https://eslint.org/).
 - `@acdh-oeaw/eslint-config-next`: additional recommended config for Next.js projects
 - `@acdh-oeaw/eslint-config-astro`: additional recommended config for Astro projects
 - `@acdh-oeaw/eslint-config-storybook`: additional recommended config for Storybook projects
+- `@acdh-oeaw/eslint-config-playwright`: additional recommended config for Playwright projects
 
 ## How to install
 
