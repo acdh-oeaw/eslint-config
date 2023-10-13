@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 1.0.9
+
+### Patch Changes
+
+- [`5213fae`](https://github.com/acdh-oeaw/eslint-config/commit/5213fae2faf848ab65743d10e533b6b010ca7f0a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enforce pascal-case in vue sfc
+
 ## 1.0.8
 
 ### Patch Changes
