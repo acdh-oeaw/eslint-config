@@ -21,6 +21,13 @@ const config = {
 				"@typescript-eslint/no-unsafe-enum-comparison": "off",
 				"@typescript-eslint/no-unsafe-member-access": "off",
 				"@typescript-eslint/no-unsafe-return": "off",
+				"vue/component-name-in-template-casing": [
+					"error",
+					"PascalCase",
+					{
+						registeredComponentsOnly: false,
+					},
+				],
 				"vue/component-tags-order": [
 					"error",
 					{
