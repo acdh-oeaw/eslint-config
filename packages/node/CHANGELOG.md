@@ -1,5 +1,16 @@
 # @acdh-oeaw/eslint-config-node
 
+## 1.0.5
+
+### Patch Changes
+
+- [`1991e27`](https://github.com/acdh-oeaw/eslint-config/commit/1991e27f0d67a9ffac2bc55605e7dd648fb082e9)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`1991e27`](https://github.com/acdh-oeaw/eslint-config/commit/1991e27f0d67a9ffac2bc55605e7dd648fb082e9)]:
+  - @acdh-oeaw/eslint-config@1.0.5
+
 ## 1.0.4
 
 ### Patch Changes
