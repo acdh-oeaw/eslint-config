@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 1.0.6
+
+### Patch Changes
+
+- [`b9294bc`](https://github.com/acdh-oeaw/eslint-config/commit/b9294bc2d1a2dbd3ffb58d644afe8d71cb67d817)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add astro:i18n virtual module to ignore
+  list
+
 ## 1.0.5
 
 ### Patch Changes
