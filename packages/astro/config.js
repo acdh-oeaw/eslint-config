@@ -9,6 +9,7 @@ const config = {
 			"error",
 			{
 				ignore: [
+					"astro:i18n",
 					"astro:assets",
 					"astro:components",
 					"astro:content",
