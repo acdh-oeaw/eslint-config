@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config
 
+## 1.0.6
+
+### Patch Changes
+
+- [`db06e94`](https://github.com/acdh-oeaw/eslint-config/commit/db06e94aa7e6b715151f3c12edd51cec0d2f9a8a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
 ## 1.0.5
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @acdh-oeaw/eslint-config-next
 
+## 1.0.9
+
+### Patch Changes
+
+- [`db06e94`](https://github.com/acdh-oeaw/eslint-config/commit/db06e94aa7e6b715151f3c12edd51cec0d2f9a8a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`db06e94`](https://github.com/acdh-oeaw/eslint-config/commit/db06e94aa7e6b715151f3c12edd51cec0d2f9a8a),
+  [`db06e94`](https://github.com/acdh-oeaw/eslint-config/commit/db06e94aa7e6b715151f3c12edd51cec0d2f9a8a)]:
+  - @acdh-oeaw/eslint-config-react@1.0.7
+  - @acdh-oeaw/eslint-config@1.0.6
+
 ## 1.0.8
 
 ### Patch Changes
