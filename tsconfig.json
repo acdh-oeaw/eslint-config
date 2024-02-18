@@ -2,11 +2,13 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"compilerOptions": {
 		"allowJs": true,
+		"lib": ["es2023"],
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"noEmit": true,
+		"skipLibCheck": true,
 		"strict": true,
-		"target": "es2021"
+		"target": "es2022"
 	},
 	"include": ["./**/*.js", "./**/*.ts"],
 	"exclude": ["node_modules"]

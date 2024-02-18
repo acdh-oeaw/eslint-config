@@ -19,10 +19,11 @@ const config = {
 		node: true,
 	},
 	parserOptions: {
-		ecmaVersion: 2021,
+		ecmaVersion: 2023,
 		project,
 	},
 	settings: {
+		"import/internal-regex": "^@/",
 		"import/parsers": {
 			"@typescript-eslint/parser": [".ts", ".tsx", ".js", ".mjs", ".cjs", ".mts", ".cts"],
 		},
@@ -51,12 +52,27 @@ const config = {
 		"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
 		"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
 		"@typescript-eslint/no-import-type-side-effects": "error",
+		/**
+		 * JSX event handler props generally only accept `void` return type, but inline react server
+		 * actions must be async. also, some libraries like `react-hook-form` expect to be able to
+		 * pass promise-returning callbacks.
+		 */
+		"@typescript-eslint/no-misused-promises": [
+			"error",
+			{
+				checksVoidReturn: {
+					arguments: false,
+					attributes: false,
+				},
+			},
+		],
 		"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
 		"@typescript-eslint/no-unnecessary-condition": "error",
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 		],
+		"@typescript-eslint/no-useless-template-literals": "error",
 		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
 		"import/first": "error",
