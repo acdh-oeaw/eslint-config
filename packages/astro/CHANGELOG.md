@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 1.0.8
+
+### Patch Changes
+
+- [`ea00474`](https://github.com/acdh-oeaw/eslint-config/commit/ea00474814bce2fd7acd85bd01b80fab07bdce68)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable no-unsafe-\* rules for astro
+
 ## 1.0.7
 
 ### Patch Changes
