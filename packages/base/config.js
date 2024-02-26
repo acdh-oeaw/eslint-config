@@ -35,8 +35,7 @@ const config = {
 		},
 	},
 	rules: {
-		/** @see https://github.com/typescript-eslint/typescript-eslint/issues/1277 */
-		// "consistent-return": "error",
+		"consistent-return": "error",
 		eqeqeq: ["error", "always", { null: "ignore" }],
 		"no-console": ["warn", { allow: ["warn", "error"] }],
 		"no-implicit-coercion": "error",
