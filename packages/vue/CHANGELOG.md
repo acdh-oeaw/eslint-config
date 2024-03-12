@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 1.0.12
+
+### Patch Changes
+
+- [`5742292`](https://github.com/acdh-oeaw/eslint-config/commit/5742292d1ca84dd7210da21c316d2cb03507734f)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
+- Updated dependencies
+  [[`5742292`](https://github.com/acdh-oeaw/eslint-config/commit/5742292d1ca84dd7210da21c316d2cb03507734f),
+  [`a848e1b`](https://github.com/acdh-oeaw/eslint-config/commit/a848e1bba11ee84dd41c850d080c05036335a961)]:
+  - @acdh-oeaw/eslint-config@1.0.7
+
 ## 1.0.11
 
 ### Patch Changes
