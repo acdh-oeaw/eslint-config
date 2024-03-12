@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-vue2",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"licence": "MIT",
 	"publishConfig": {
 		"access": "public"
