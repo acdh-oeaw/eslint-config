@@ -1,5 +1,15 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 1.0.10
+
+### Patch Changes
+
+- [`930fb9b`](https://github.com/acdh-oeaw/eslint-config/commit/930fb9b1b70f63843ee53a0e41c93f0383e81d20)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - handle astro:actions virtual module
+
+- [`930fb9b`](https://github.com/acdh-oeaw/eslint-config/commit/930fb9b1b70f63843ee53a0e41c93f0383e81d20)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump eslint-plugin-astro
+
 ## 1.0.9
 
 ### Patch Changes
