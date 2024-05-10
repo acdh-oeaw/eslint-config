@@ -2,18 +2,15 @@
 	"name": "@acdh-oeaw/eslint-config-playwright",
 	"version": "1.0.7",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
-	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
-		"config.js"
+		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-playwright": "^1.5.2"
+		"eslint-plugin-playwright": "^1.6.0"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"

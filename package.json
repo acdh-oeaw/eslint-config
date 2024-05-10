@@ -4,13 +4,14 @@
 	"type": "module",
 	"engines": {
 		"node": "20.x",
-		"pnpm": "8.x"
+		"pnpm": "9.x"
 	},
-	"packageManager": "pnpm@8.15.4",
+	"packageManager": "pnpm@9.1.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
+		"ci:version": "changeset version && prettier \"**/CHANGELOG.md\" --write",
 		"format:check": "prettier . --cache --check --ignore-path ./.gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
@@ -24,13 +25,13 @@
 		"@changesets/changelog-github": "^0.5.0",
 		"@changesets/cli": "^2.27.1",
 		"@commitlint/cli": "^18.6.1",
-		"@types/eslint": "^8.56.5",
+		"@types/eslint": "^8.56.10",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^15.2.2",
 		"npm-run-all2": "^6.1.2",
 		"prettier": "^3.2.5",
-		"simple-git-hooks": "^2.10.0",
-		"typescript": "^5.4.2"
+		"simple-git-hooks": "^2.11.1",
+		"typescript": "^5.4.5"
 	},
 	"commitlint": {
 		"extends": "@acdh-oeaw/commitlint-config"

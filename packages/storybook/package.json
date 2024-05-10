@@ -2,15 +2,12 @@
 	"name": "@acdh-oeaw/eslint-config-storybook",
 	"version": "1.0.7",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
-	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
-		"config.js"
+		"./config.js"
 	],
 	"dependencies": {
 		"eslint-plugin-storybook": ">=0.8.0"

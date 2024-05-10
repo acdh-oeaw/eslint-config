@@ -2,25 +2,22 @@
 	"name": "@acdh-oeaw/eslint-config",
 	"version": "1.0.7",
 	"licence": "MIT",
-	"publishConfig": {
-		"access": "public"
-	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js",
 		"./strict": "./config-strict.js"
 	},
 	"files": [
-		"config.js",
-		"config-strict.js"
+		"./config.js",
+		"./config-strict.js"
 	],
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^7.2.0",
-		"@typescript-eslint/parser": "^7.2.0",
+		"@typescript-eslint/eslint-plugin": "^7.8.0",
+		"@typescript-eslint/parser": "^7.8.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-typescript": "^3.6.1",
 		"eslint-plugin-import": "npm:eslint-plugin-i",
-		"eslint-plugin-simple-import-sort": "^12.0.0"
+		"eslint-plugin-simple-import-sort": "^12.1.0"
 	},
 	"peerDependencies": {
 		"eslint": "8.x",
