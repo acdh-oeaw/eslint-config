@@ -1,5 +1,14 @@
 # @acdh-oeaw/eslint-config-storybook
 
+## 1.0.8
+
+### Patch Changes
+
+- Updated dependencies
+  [[`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87),
+  [`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87)]:
+  - @acdh-oeaw/eslint-config@1.0.8
+
 ## 1.0.7
 
 ### Patch Changes

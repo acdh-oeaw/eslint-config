@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-react
 
+## 1.0.9
+
+### Patch Changes
+
+- [`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add eslint-plugin-react-compiler
+
+- Updated dependencies
+  [[`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87),
+  [`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87)]:
+  - @acdh-oeaw/eslint-config@1.0.8
+
 ## 1.0.8
 
 ### Patch Changes

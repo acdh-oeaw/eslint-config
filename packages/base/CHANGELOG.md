@@ -1,5 +1,16 @@
 # @acdh-oeaw/eslint-config
 
+## 1.0.8
+
+### Patch Changes
+
+- [`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add eslint-plugin-regexp
+
+- [`91194ab`](https://github.com/acdh-oeaw/eslint-config/commit/91194abcecff47fe416027434b5e26f2f81fda87)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - replace eslint-plugin-import with
+  eslint-plugin-import-x
+
 ## 1.0.7
 
 ### Patch Changes
