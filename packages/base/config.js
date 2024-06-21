@@ -8,14 +8,15 @@ const config = {
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended-type-checked",
 		"plugin:@typescript-eslint/stylistic-type-checked",
-		"plugin:import/recommended",
-		"plugin:import/typescript",
+		"plugin:import-x/recommended",
+		"plugin:import-x/typescript",
+		"plugin:regexp/recommended",
 		"prettier",
 	],
 	plugins: ["simple-import-sort"],
 	env: {
 		browser: true,
-		es2021: true,
+		es2023: true,
 		node: true,
 	},
 	parserOptions: {
@@ -23,11 +24,11 @@ const config = {
 		project,
 	},
 	settings: {
-		"import/internal-regex": "^@/",
-		"import/parsers": {
+		"import-x/internal-regex": "^@/",
+		"import-x/parsers": {
 			"@typescript-eslint/parser": [".ts", ".tsx", ".js", ".mjs", ".cjs", ".mts", ".cts"],
 		},
-		"import/resolver": {
+		"import-x/resolver": {
 			typescript: {
 				project,
 				alwaysTryTypes: true,
@@ -71,13 +72,13 @@ const config = {
 			"error",
 			{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 		],
-		"@typescript-eslint/no-useless-template-literals": "error",
+		"@typescript-eslint/no-useless-template-expression": "error",
 		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
-		"import/first": "error",
-		"import/newline-after-import": "error",
-		"import/no-anonymous-default-export": "error",
-		"import/no-duplicates": ["error", { "prefer-inline": true }],
+		"import-x/first": "error",
+		"import-x/newline-after-import": "error",
+		"import-x/no-anonymous-default-export": "error",
+		"import-x/no-duplicates": ["error", { "prefer-inline": true }],
 		"simple-import-sort/imports": "error",
 		"simple-import-sort/exports": "error",
 	},

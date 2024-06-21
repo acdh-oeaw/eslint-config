@@ -10,7 +10,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-n": "^17.6.0"
+		"eslint-plugin-n": "^17.9.0"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"

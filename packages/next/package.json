@@ -10,7 +10,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"@next/eslint-plugin-next": "^14.2.3"
+		"@next/eslint-plugin-next": "^14.2.4"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*",

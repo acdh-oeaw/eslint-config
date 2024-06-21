@@ -9,6 +9,7 @@ const config = {
 				"plugin:react-hooks/recommended",
 				"plugin:jsx-a11y/recommended",
 			],
+			plugins: ["react-compiler"],
 			settings: {
 				react: {
 					version: "detect",
@@ -26,6 +27,7 @@ const config = {
 				"react/jsx-no-leaked-render": "error",
 				"react/jsx-no-target-blank": "off",
 				"react/prop-types": "off",
+				"react-compiler/react-compiler": "error",
 			},
 		},
 	],

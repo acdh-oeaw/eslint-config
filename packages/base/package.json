@@ -12,11 +12,12 @@
 		"./config-strict.js"
 	],
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^7.8.0",
-		"@typescript-eslint/parser": "^7.8.0",
+		"@typescript-eslint/eslint-plugin": "^7.13.1",
+		"@typescript-eslint/parser": "^7.13.1",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-typescript": "^3.6.1",
-		"eslint-plugin-import": "npm:eslint-plugin-i",
+		"eslint-plugin-import-x": "^0.5.1",
+		"eslint-plugin-regexp": "^2.6.0",
 		"eslint-plugin-simple-import-sort": "^12.1.0"
 	},
 	"peerDependencies": {
