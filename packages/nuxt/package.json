@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-nuxt",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"licence": "MIT",
 	"main": "./config.js",
 	"exports": {
