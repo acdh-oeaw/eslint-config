@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config
 
+## 1.0.9
+
+### Patch Changes
+
+- [`2245d1c`](https://github.com/acdh-oeaw/eslint-config/commit/2245d1c27c24fd071041ef068425b1714d017346)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - use renamed
+  no-unnecessary-template-expression rule
+
 ## 1.0.8
 
 ### Patch Changes

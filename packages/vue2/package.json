@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-vue2",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"licence": "MIT",
 	"main": "./config.js",
 	"exports": {
