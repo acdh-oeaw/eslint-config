@@ -72,7 +72,7 @@ const config = {
 			"error",
 			{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 		],
-		"@typescript-eslint/no-useless-template-expression": "error",
+		"@typescript-eslint/no-unnecessary-template-expression": "error",
 		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
 		"import-x/first": "error",
