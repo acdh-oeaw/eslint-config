@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-node
 
+## 1.0.10
+
+### Patch Changes
+
+- [`bb30d98`](https://github.com/acdh-oeaw/eslint-config/commit/bb30d98814195efbd9d6eb93d3886ee2f6e87c66)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable import rules in eslint-plugin-n
+
 ## 1.0.9
 
 ### Patch Changes
