@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 1.0.13
+
+### Patch Changes
+
+- [`5c40123`](https://github.com/acdh-oeaw/eslint-config/commit/5c40123c22c362436adc1aa9606fa13a411498fe)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update references to
+  eslint-plugin-import to eslint-plugin-import-x
+
 ## 1.0.12
 
 ### Patch Changes
