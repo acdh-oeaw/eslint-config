@@ -5,7 +5,7 @@ const config = {
 	},
 	rules: {
 		/** @see https://github.com/import-js/eslint-import-resolver-typescript/issues/72 */
-		"import/no-unresolved": [
+		"import-x/no-unresolved": [
 			"error",
 			{
 				ignore: [

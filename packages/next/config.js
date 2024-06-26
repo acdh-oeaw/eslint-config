@@ -5,31 +5,31 @@ const config = {
 			files: ["./**/*.@(ts|tsx)"],
 			extends: ["plugin:@next/next/core-web-vitals"],
 			rules: {
-				"import/no-default-export": "error",
+				"import-x/no-default-export": "error",
 			},
 		},
 		{
 			files: ["./**/*.d.ts"],
 			rules: {
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 			},
 		},
 		{
 			files: ["./*.config.ts", "./*.config.js", "./*.config.mjs"],
 			rules: {
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 			},
 		},
 		{
 			files: ["./i18n.ts", "./lib/i18n.ts", "./src/i18n.ts", "./src/lib/i18n.ts"],
 			rules: {
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 			},
 		},
 		{
 			files: ["./middleware.ts", "./src/middleware.ts"],
 			rules: {
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 			},
 		},
 		{
@@ -42,7 +42,7 @@ const config = {
 				"./src/app/sitemap.ts",
 			],
 			rules: {
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 			},
 		},
 		{
@@ -73,7 +73,7 @@ const config = {
 				"./src/app/**/twitter-image.@(ts|tsx)",
 			],
 			rules: {
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 			},
 		},
 	],

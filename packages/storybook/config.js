@@ -6,7 +6,7 @@ const config = {
 			extends: "plugin:storybook/recommended",
 			rules: {
 				"@typescript-eslint/explicit-module-boundary-types": "off",
-				"import/no-default-export": "off",
+				"import-x/no-default-export": "off",
 				"react/function-component-definition": ["off", { namedComponents: "function-expression" }],
 			},
 		},
