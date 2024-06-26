@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-astro",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"licence": "MIT",
 	"main": "./config.js",
 	"exports": {
