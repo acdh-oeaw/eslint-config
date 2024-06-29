@@ -7,6 +7,7 @@ const config = {
 			rules: {
 				"n/prefer-global/url": ["warn"],
 				"n/prefer-global/url-search-params": ["warn"],
+				"n/prefer-node-protocol": "error",
 				"n/prefer-promises/fs": ["warn"],
 				/** These should be handled by `typescript` and `eslint-plugin-import-x` already. */
 				"n/no-extraneous-import": "off",
@@ -15,7 +16,7 @@ const config = {
 				"n/no-missing-require": "off",
 				"n/no-unpublished-bin": "off",
 				"n/no-unpublished-import": "off",
-				"n/no-unpublished-require": "off"
+				"n/no-unpublished-require": "off",
 			},
 		},
 	],
