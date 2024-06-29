@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-node
 
+## 1.0.11
+
+### Patch Changes
+
+- [`e4e4d0d`](https://github.com/acdh-oeaw/eslint-config/commit/e4e4d0d5972782c930fbb81eb0d9596613aab2f8)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - prefer node protocol imports
+
 ## 1.0.10
 
 ### Patch Changes
