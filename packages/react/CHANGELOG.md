@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-react
 
+## 1.0.12
+
+### Patch Changes
+
+- [`f988fd5`](https://github.com/acdh-oeaw/eslint-config/commit/f988fd5ac0ad900f186d4f4cf7273982e725dd98)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update react plugin
+
 ## 1.0.11
 
 ### Patch Changes
