@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-next
 
+## 1.0.15
+
+### Patch Changes
+
+- [`de7e5f2`](https://github.com/acdh-oeaw/eslint-config/commit/de7e5f25baa9378e079221fd65946e88e443157a)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow default export in \*.config.tsx
+  files
+
+- Updated dependencies
+  [[`f988fd5`](https://github.com/acdh-oeaw/eslint-config/commit/f988fd5ac0ad900f186d4f4cf7273982e725dd98)]:
+  - @acdh-oeaw/eslint-config-react@1.0.12
+
 ## 1.0.14
 
 ### Patch Changes
