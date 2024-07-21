@@ -15,7 +15,7 @@ const config = {
 			},
 		},
 		{
-			files: ["./*.config.ts", "./*.config.js", "./*.config.mjs"],
+			files: ["./*.config.ts", "./*.config.tsx", "./*.config.js", "./*.config.mjs"],
 			rules: {
 				"import-x/no-default-export": "off",
 			},
