@@ -2,18 +2,27 @@
 	"name": "@acdh-oeaw/eslint-config-vue",
 	"version": "1.0.15",
 	"licence": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
+		"./config.d.ts",
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-vue": "^9.27.0",
-		"eslint-plugin-vuejs-accessibility": "^2.3.1"
+		"eslint-plugin-vue": "^9.28.0",
+		"eslint-plugin-vuejs-accessibility": "^2.4.1"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.1",
+		"globals": "^15.9.0"
 	}
 }

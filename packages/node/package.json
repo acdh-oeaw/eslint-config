@@ -2,17 +2,26 @@
 	"name": "@acdh-oeaw/eslint-config-node",
 	"version": "1.0.12",
 	"licence": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
+		"./config.d.ts",
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-n": "^17.9.0"
+		"eslint-plugin-n": "^17.10.2"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.1",
+		"globals": "^15.9.0"
 	}
 }

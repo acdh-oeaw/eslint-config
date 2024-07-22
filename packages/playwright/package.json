@@ -2,11 +2,16 @@
 	"name": "@acdh-oeaw/eslint-config-playwright",
 	"version": "1.0.10",
 	"licence": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
+		"./config.d.ts",
 		"./config.js"
 	],
 	"dependencies": {
@@ -14,5 +19,9 @@
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.1",
+		"globals": "^15.9.0"
 	}
 }

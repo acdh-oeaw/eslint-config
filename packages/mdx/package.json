@@ -1,6 +1,6 @@
 {
-	"name": "@acdh-oeaw/eslint-config-next",
-	"version": "1.0.14",
+	"name": "@acdh-oeaw/eslint-config-mdx",
+	"version": "0.0.0",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
@@ -14,13 +14,13 @@
 		"./config.d.ts",
 		"./config.js"
 	],
+	"dependencies": {
+		"eslint-plugin-mdx": "^3.1.5"
+	},
 	"peerDependencies": {
-		"@acdh-oeaw/eslint-config": "workspace:*",
-		"@acdh-oeaw/eslint-config-react": "workspace:*",
-		"@next/eslint-plugin-next": "^15.0.0-rc.0"
+		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"@next/eslint-plugin-next": "15.0.0-rc.0",
 		"@types/eslint": "^9.6.1",
 		"globals": "^15.9.0"
 	}
