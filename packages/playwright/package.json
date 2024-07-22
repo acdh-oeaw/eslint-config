@@ -2,6 +2,10 @@
 	"name": "@acdh-oeaw/eslint-config-playwright",
 	"version": "1.0.10",
 	"licence": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"

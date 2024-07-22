@@ -1,11 +1,19 @@
-/** @type {import('eslint').Linter.Config} */
-const config = {
-	overrides: [
-		{
-			files: ["./e2e/**/*.@(spec|test).@(ts|tsx)"],
-			extends: "plugin:playwright/recommended",
-		},
-	],
-};
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import js from "@eslint/js";
+import { FlatCompat } from "@eslint/eslintrc";
 
-module.exports = config;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const compat = new FlatCompat({
+	baseDirectory: __dirname,
+	recommendedConfig: js.configs.recommended,
+	allConfig: js.configs.all,
+});
+
+export default [
+	...compat.extends("plugin:playwright/recommended").map((config) => ({
+		...config,
+		files: ["./e2e/**/*.@(spec|test).@(ts|tsx)"],
+	})),
+];

@@ -2,6 +2,10 @@
 	"name": "@acdh-oeaw/eslint-config-astro",
 	"version": "1.0.14",
 	"licence": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
