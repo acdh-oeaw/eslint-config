@@ -22,15 +22,22 @@
 	"devDependencies": {
 		"@acdh-oeaw/commitlint-config": "^1.0.0",
 		"@acdh-oeaw/prettier-config": "^2.0.0",
+		"@acdh-oeaw/tsconfig-lib": "^1.0.2",
 		"@changesets/changelog-github": "^0.5.0",
 		"@changesets/cli": "^2.27.7",
 		"@commitlint/cli": "^18.6.1",
+		"@types/node": "^20.14.12",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^15.2.7",
 		"npm-run-all2": "^6.2.2",
 		"prettier": "^3.3.3",
 		"simple-git-hooks": "^2.11.1",
 		"typescript": "^5.5.4"
+	},
+	"pnpm": {
+		"overrides": {
+			"@typescript-eslint/utils": "rc-v8"
+		}
 	},
 	"commitlint": {
 		"extends": "@acdh-oeaw/commitlint-config"

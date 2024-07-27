@@ -1,39 +1,37 @@
 /** @typedef {import("eslint").Linter.Config} Config */
 
+import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
-import ts from "typescript-eslint";
-// import importPlugin from "eslint-plugin-import-x";
+import prettier from "eslint-config-prettier";
+import importPlugin from "eslint-plugin-import-x";
 import * as regexpPlugin from "eslint-plugin-regexp";
 import importSortPlugin from "eslint-plugin-simple-import-sort";
-import prettier from "eslint-config-prettier";
-import { FlatCompat } from "@eslint/eslintrc";
 import globals from "globals";
+import ts from "typescript-eslint";
 
 const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
 });
 
 /** @type {Array<Config>} */
-const config = ts.config(
+const config = [
 	{
 		linterOptions: {
 			reportUnusedDisableDirectives: true,
 		},
 	},
 	js.configs.recommended,
-	// ...ts.configs.recommendedTypeChecked,
 	...ts.configs.strictTypeChecked,
 	...ts.configs.stylisticTypeChecked,
 	{
 		languageOptions: {
-			// globals: {
-			// 	...globals.browser,
-			// 	...globals.node,
-			// },
+			globals: {
+				...globals["shared-node-browser"],
+				// ...globals.browser,
+				// ...globals.nodeBuiltin,
+			},
 			parserOptions: {
-				// ecmaVersion: 2023,
-				// sourceType: "module",
-				project: true,
+				projectService: true,
 				// tsconfigRootDir: import.meta.dirname,
 			},
 		},
@@ -72,7 +70,7 @@ const config = ts.config(
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
-	...compat.extends("plugin:import-x/recommended", "plugin:import-x/typescript"),
+	...compat.config(importPlugin.configs.recommended, importPlugin.configs.typescript),
 	{
 		settings: {
 			"import-x/internal-regex": "^[@~]/",
@@ -101,6 +99,6 @@ const config = ts.config(
 	},
 	regexpPlugin.configs["flat/recommended"],
 	prettier,
-);
+];
 
 export default config;

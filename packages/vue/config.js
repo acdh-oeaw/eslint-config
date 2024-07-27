@@ -1,42 +1,27 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+/** @typedef {import("eslint").Linter.Config} Config */
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { FlatCompat } from "@eslint/eslintrc";
+import vuePlugin from "eslint-plugin-vue";
+import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
+
 const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
+	baseDirectory: import.meta.dirname,
 });
 
-export default [
+/** @type {Array<Config>} */
+const config = [
 	{
-		languageOptions: {
-			ecmaVersion: 5,
-			sourceType: "script",
-
-			parserOptions: {
-				extraFileExtensions: [".vue"],
-			},
-		},
-	},
-	...compat
-		.extends("plugin:vue/vue3-recommended", "plugin:vuejs-accessibility/recommended", "prettier")
-		.map((config) => ({
-			...config,
-			files: ["./**/*.vue"],
-		})),
-	{
-		files: ["./**/*.vue"],
-		languageOptions: {
-			ecmaVersion: 5,
-			sourceType: "script",
-			parserOptions: {
-				parser: "@typescript-eslint/parser",
-			},
-		},
+		...compat.extends(
+			"plugin:vue/vue3-recommended",
+			"plugin:vuejs-accessibility/recommended",
+			"prettier",
+		),
+		files: ["**/*.vue"],
+		// languageOptions: {
+		// 	parserOptions: {
+		// 		parser: "@typescript-eslint/parser",
+		// 	},
+		// },
 		rules: {
 			"@typescript-eslint/no-unsafe-argument": "off",
 			"@typescript-eslint/no-unsafe-assignment": "off",
@@ -92,3 +77,5 @@ export default [
 		},
 	},
 ];
+
+export default config;

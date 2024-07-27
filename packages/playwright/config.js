@@ -1,19 +1,18 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+/** @typedef {import("eslint").Linter.Config} Config */
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { FlatCompat } from "@eslint/eslintrc";
+import playwrightPlugin from "eslint-plugin-playwright";
+
 const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
+	baseDirectory: import.meta.dirname,
 });
 
-export default [
-	...compat.extends("plugin:playwright/recommended").map((config) => ({
-		...config,
+/** @type {Array<Config>} */
+const config = [
+	{
 		files: ["./e2e/**/*.@(spec|test).@(ts|tsx)"],
-	})),
+		...compat.extends(playwrightPlugin.configs.recommended),
+	},
 ];
+
+export default config;

@@ -1,34 +1,26 @@
-import { fixupConfigRules } from "@eslint/compat";
-import reactCompiler from "eslint-plugin-react-compiler";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+/** @typedef {import("eslint").Linter.Config} Config */
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { FlatCompat } from "@eslint/eslintrc";
+import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
+import reactPlugin from "eslint-plugin-react";
+import reactCompilerPlugin from "eslint-plugin-react-compiler";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
+
 const compat = new FlatCompat({
-	baseDirectory: __dirname,
-	recommendedConfig: js.configs.recommended,
-	allConfig: js.configs.all,
+	baseDirectory: import.meta.dirname,
 });
 
-export default [
-	...fixupConfigRules(
-		compat.extends(
-			"plugin:react/recommended",
-			"plugin:react/jsx-runtime",
-			"plugin:react-hooks/recommended",
-			"plugin:jsx-a11y/recommended",
-		),
-	).map((config) => ({
-		...config,
-		files: ["./**/*.@(ts|tsx)"],
-	})),
+/** @type {Array<Config>} */
+const config = [
+	compat.config(
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:react-hooks/recommended",
+		"plugin:jsx-a11y/recommended",
+	),
 	{
-		files: ["./**/*.@(ts|tsx)"],
 		plugins: {
-			"react-compiler": reactCompiler,
+			"react-compiler": reactCompilerPlugin,
 		},
 		settings: {
 			react: {
@@ -74,3 +66,5 @@ export default [
 		},
 	},
 ];
+
+export default config;

@@ -19,5 +19,8 @@
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.0"
 	}
 }
