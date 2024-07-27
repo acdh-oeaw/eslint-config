@@ -1,5 +1,3 @@
-/** @typedef {import("eslint").Linter.Config} Config */
-
 import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import prettier from "eslint-config-prettier";
@@ -13,8 +11,7 @@ const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
 });
 
-/** @type {Array<Config>} */
-const config = [
+const config = ts.config(
 	{
 		linterOptions: {
 			reportUnusedDisableDirectives: true,
@@ -70,7 +67,8 @@ const config = [
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
-	...compat.config(importPlugin.configs.recommended, importPlugin.configs.typescript),
+	...compat.config(importPlugin.configs.recommended),
+	...compat.config(importPlugin.configs.typescript),
 	{
 		settings: {
 			"import-x/internal-regex": "^[@~]/",
@@ -79,6 +77,7 @@ const config = [
 					alwaysTryTypes: true,
 					project: true,
 				},
+				// node: true,
 			},
 		},
 		rules: {
@@ -99,6 +98,6 @@ const config = [
 	},
 	regexpPlugin.configs["flat/recommended"],
 	prettier,
-];
+);
 
 export default config;
