@@ -1,11 +1,6 @@
-import { FlatCompat } from "@eslint/eslintrc";
 import nodePlugin from "eslint-plugin-n";
 // import globals from "globals";
 import ts from "typescript-eslint";
-
-const compat = new FlatCompat({
-	baseDirectory: import.meta.dirname,
-});
 
 const config = ts.config(
 	// {

@@ -43,6 +43,7 @@ const config = ts.config(
 		files: ["**/*.astro/*.ts"],
 		languageOptions: {
 			parserOptions: {
+				ecmaVersion: 2023,
 				project: null,
 			},
 		},

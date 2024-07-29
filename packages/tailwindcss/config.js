@@ -1,15 +1,8 @@
-import { FlatCompat } from "@eslint/eslintrc";
 import tailwindcssPlugin from "eslint-plugin-tailwindcss";
 // import globals from "globals";
 import ts from "typescript-eslint";
 
-const compat = new FlatCompat({
-	baseDirectory: import.meta.dirname,
-});
-
-const config = ts.config(
-	...tailwindcssPlugin.configs["flat/recommended"]
-	{
+const config = ts.config(...tailwindcssPlugin.configs["flat/recommended"], {
 	settings: {
 		tailwindcss: {
 			callees: ["cn", "variants"],

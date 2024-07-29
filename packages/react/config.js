@@ -1,8 +1,8 @@
 import { FlatCompat } from "@eslint/eslintrc";
-// import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
-// import reactPlugin from "eslint-plugin-react";
+import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
+import reactPlugin from "eslint-plugin-react";
 import reactCompilerPlugin from "eslint-plugin-react-compiler";
-// import reactHooksPlugin from "eslint-plugin-react-hooks";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
 // import globals from "globals";
 import ts from "typescript-eslint";
 
@@ -19,16 +19,13 @@ const config = ts.config(
 	// 		},
 	// 	},
 	// },
-	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
-	...compat.extends(
-		"plugin:react/recommended",
-		"plugin:react/jsx-runtime",
-		"plugin:react-hooks/recommended",
-		"plugin:jsx-a11y/recommended",
-	),
+	reactPlugin.configs.flat["jsx-runtime"],
+	reactPlugin.configs.flat.recommended,
+	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		plugins: {
 			"react-compiler": reactCompilerPlugin,
+			"react-hooks": reactHooksPlugin,
 		},
 		settings: {
 			react: {
@@ -38,6 +35,8 @@ const config = ts.config(
 			linkComponents: [{ name: "Link" }, { name: "NavLink" }],
 		},
 		rules: {
+			...reactHooksPlugin.configs.recommended.rules,
+
 			"jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
 			"jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
 			"jsx-a11y/no-redundant-roles": [
