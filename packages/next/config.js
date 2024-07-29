@@ -1,15 +1,15 @@
-/** @typedef {import("eslint").Linter.Config} Config */
-
 import { FlatCompat } from "@eslint/eslintrc";
-import nextPlugin from "@next/eslint-plugin-next";
+// import nextPlugin from "@next/eslint-plugin-next";
+// import globals from "globals";
+import ts from "typescript-eslint";
 
 const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
 });
 
-/** @type {Array<Config>} */
-const config = [
-	...compat.config(nextPlugin.configs["core-web-vitals"]),
+const config = ts.config(
+	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
+	...compat.extends("plugin:@next/eslint-plugin-next/core-web-vitals"),
 	{
 		rules: {
 			"import-x/no-default-export": "error",
@@ -17,6 +17,8 @@ const config = [
 	},
 	{
 		files: [
+			// "**/*.d.ts",
+
 			"./*.config.@(js|ts|tsx)",
 
 			"./middleware.ts",
@@ -45,6 +47,6 @@ const config = [
 			"import-x/no-default-export": "off",
 		},
 	},
-];
+);
 
 export default config;

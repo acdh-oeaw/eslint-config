@@ -1,22 +1,22 @@
-/** @typedef {import("eslint").Linter.Config} Config */
-
 import astroPlugin from "eslint-plugin-astro";
-import tseslint from "typescript-eslint";
+// import globals from "globals";
+import ts from "typescript-eslint";
 
-/** @type {Array<Config>} */
-const config = [
+const config = ts.config(
+	// {
+	// 	languageOptions: {
+	// 		globals: {
+	// 			...globals.browser,
+	// 			...globals.nodeBuiltin,
+	// 		},
+	// 	},
+	// },
 	...astroPlugin.configs.recommended,
 	...astroPlugin.configs["jsx-a11y-recommended"],
 	{
 		files: ["**/*.astro"],
 		rules: {
-			"astro/jsx-a11y/anchor-is-valid": [
-				"error",
-				{
-					components: ["Link"],
-					aspects: ["invalidHref", "preferButton"],
-				},
-			],
+			"astro/jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
 			"astro/jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
 			"astro/jsx-a11y/no-redundant-roles": [
 				"error",
@@ -41,15 +41,13 @@ const config = [
 	/** @see https://github.com/ota-meshi/eslint-plugin-astro/issues/402#issuecomment-2195847165 */
 	{
 		files: ["**/*.astro/*.ts"],
-		rules: {
-			languageOptions: {
-				parserOptions: {
-					project: null,
-				},
+		languageOptions: {
+			parserOptions: {
+				project: null,
 			},
-			...tseslint.configs.disableTypeChecked,
 		},
+		...ts.configs.disableTypeChecked,
 	},
-];
+);
 
 export default config;

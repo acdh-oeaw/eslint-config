@@ -1,21 +1,28 @@
-/** @typedef {import("eslint").Linter.Config} Config */
-
 import { FlatCompat } from "@eslint/eslintrc";
 import nodePlugin from "eslint-plugin-n";
+// import globals from "globals";
+import ts from "typescript-eslint";
 
 const compat = new FlatCompat({
 	baseDirectory: import.meta.dirname,
 });
 
-/** @type {Array<Config>} */
-const config = [
-	...compat.config(nodePlugin.configs.recommended),
+const config = ts.config(
+	// {
+	// 	languageOptions: {
+	// 		globals: {
+	// 			...globals.nodeBuiltin,
+	// 		},
+	// 	},
+	// },
+	nodePlugin.configs["flat/recommended-module"],
 	{
 		rules: {
-			"n/prefer-global/url": ["warn"],
-			"n/prefer-global/url-search-params": ["warn"],
+			"n/prefer-global/url": "warn",
+			"n/prefer-global/url-search-params": "warn",
 			"n/prefer-node-protocol": "error",
-			"n/prefer-promises/fs": ["warn"],
+			"n/prefer-promises/fs": "warn",
+
 			"n/no-extraneous-import": "off",
 			"n/no-extraneous-require": "off",
 			"n/no-missing-import": "off",
@@ -25,6 +32,6 @@ const config = [
 			"n/no-unpublished-require": "off",
 		},
 	},
-];
+);
 
 export default config;

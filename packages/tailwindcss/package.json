@@ -1,6 +1,6 @@
 {
-	"name": "@acdh-oeaw/eslint-config-vue",
-	"version": "1.0.15",
+	"name": "@acdh-oeaw/eslint-config-tailwindcss",
+	"version": "1.0.0",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
@@ -15,8 +15,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-vue": "^9.27.0",
-		"eslint-plugin-vuejs-accessibility": "^2.3.1"
+		"eslint-plugin-tailwindcss": "^3.17.4"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"

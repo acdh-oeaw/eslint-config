@@ -33,6 +33,7 @@ const config = ts.config(
 			},
 		},
 		rules: {
+			// "arrow-body-style": ["error", "always"],
 			"consistent-return": "error",
 			eqeqeq: ["error", "always", { null: "ignore" }],
 			"no-console": ["warn", { allow: ["warn", "error"] }],
@@ -40,6 +41,7 @@ const config = ts.config(
 			"no-param-reassign": "error",
 			"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
 			"no-throw-literal": "error",
+			// "prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
 			"require-atomic-updates": "error",
 			"@typescript-eslint/array-type": ["error", { default: "generic" }],
 			"@typescript-eslint/consistent-type-exports": [
@@ -47,34 +49,34 @@ const config = ts.config(
 				{ fixMixedExportsWithInlineTypeSpecifier: true },
 			],
 			"@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
-			"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
+			// "@typescript-eslint/explicit-module-boundary-types": "error",
+			"@typescript-eslint/no-empty-object-type": ["error", { allowInterfaces: "always" }],
 			"@typescript-eslint/no-import-type-side-effects": "error",
-			"@typescript-eslint/no-misused-promises": [
-				"error",
-				{ checksVoidReturn: { arguments: false, attributes: false } },
-			],
 			"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
 			"@typescript-eslint/no-unnecessary-condition": "error",
 			"@typescript-eslint/no-unused-vars": [
 				"error",
-				{
-					argsIgnorePattern: "^_",
-					varsIgnorePattern: "^_",
-				},
+				{ argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
 			],
 			"@typescript-eslint/no-unnecessary-template-expression": "error",
-			"@typescript-eslint/sort-type-constituents": "error",
+			// "@typescript-eslint/require-array-sort-compare": "error",
+			// "@typescript-eslint/strict-boolean-expressions": "error",
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 		},
 	},
+	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
 	...compat.config(importPlugin.configs.recommended),
 	...compat.config(importPlugin.configs.typescript),
 	{
 		settings: {
 			"import-x/internal-regex": "^[@~]/",
+			// "import-x/parsers:": {
+			// 	'@typescript-eslint/parser': [".ts", ".tsx"]
+			// },
 			"import-x/resolver": {
 				typescript: {
 					alwaysTryTypes: true,
+					// extensions: [".js", ".ts", ".tsx"],
 					project: true,
 				},
 				// node: true,
@@ -85,6 +87,12 @@ const config = ts.config(
 			"import-x/newline-after-import": "error",
 			"import-x/no-anonymous-default-export": "error",
 			"import-x/no-duplicates": ["error", { "prefer-inline": true }],
+		},
+	},
+	{
+		files: ["**/*.cjs"],
+		rules: {
+			"@typescript-eslint/no-var-requires": "off",
 		},
 	},
 	{

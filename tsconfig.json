@@ -4,11 +4,6 @@
 	"compilerOptions": {
 		"exactOptionalPropertyTypes": false
 	},
-	"include": [
-		"./**/*.js",
-		"./**/*.ts"
-	],
-	"exclude": [
-		"node_modules"
-	]
+	"include": ["./**/*.js", "./**/*.ts"],
+	"exclude": ["node_modules"]
 }

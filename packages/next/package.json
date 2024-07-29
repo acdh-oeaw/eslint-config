@@ -11,6 +11,7 @@
 		".": "./config.js"
 	},
 	"files": [
+		"./config.d.ts",
 		"./config.js"
 	],
 	"peerDependencies": {
@@ -19,6 +20,8 @@
 		"@next/eslint-plugin-next": "^15.0.0-rc.0"
 	},
 	"devDependencies": {
-		"@next/eslint-plugin-next": "^15.0.0-rc.0"
+		"@next/eslint-plugin-next": "^15.0.0-rc.0",
+		"@types/eslint": "^9.6.0",
+		"globals": "^15.8.0"
 	}
 }

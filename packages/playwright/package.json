@@ -11,6 +11,7 @@
 		".": "./config.js"
 	},
 	"files": [
+		"./config.d.ts",
 		"./config.js"
 	],
 	"dependencies": {
@@ -18,5 +19,9 @@
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9.6.0",
+		"globals": "^15.8.0"
 	}
 }
