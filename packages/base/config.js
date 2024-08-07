@@ -37,6 +37,7 @@ const config = ts.config(
 		rules: {
 			// "arrow-body-style": ["error", "always"],
 			"consistent-return": "error",
+			curly: "error",
 			eqeqeq: ["error", "always", { null: "ignore" }],
 			"no-console": ["warn", { allow: ["warn", "error"] }],
 			"no-implicit-coercion": "error",
