@@ -3,57 +3,68 @@
 Shared configuration presets for [`eslint`](https://eslint.org/).
 
 - `@acdh-oeaw/eslint-config`: recommended base config for typescript projects
-- `@acdh-oeaw/eslint-config/strict`: enable additional strict rules for typescript projects
-- `@acdh-oeaw/eslint-config-node`: additional recommended config for Node.js projects
-- `@acdh-oeaw/eslint-config-vue2`: additional recommended config for Vue 2 projects
-- `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue 3 projects
-- `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Nuxt 3 projects
-- `@acdh-oeaw/eslint-config-react`: additional recommended config for React projects
-- `@acdh-oeaw/eslint-config-next`: additional recommended config for Next.js projects
 - `@acdh-oeaw/eslint-config-astro`: additional recommended config for Astro projects
-- `@acdh-oeaw/eslint-config-storybook`: additional recommended config for Storybook projects
+- `@acdh-oeaw/eslint-config-mdx`: additional recommended config for .mdx files
+- `@acdh-oeaw/eslint-config-next`: additional recommended config for Next.js projects
+- `@acdh-oeaw/eslint-config-node`: additional recommended config for Node.js projects
+- `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Nuxt 3 projects
 - `@acdh-oeaw/eslint-config-playwright`: additional recommended config for Playwright projects
+- `@acdh-oeaw/eslint-config-react`: additional recommended config for React projects
+- `@acdh-oeaw/eslint-config-solid`: additional recommended config for Solid projects
+- `@acdh-oeaw/eslint-config-storybook`: additional recommended config for Storybook projects
+- `@acdh-oeaw/eslint-config-tailwindcss`: additional recommended config for Tailwind CSS
+- `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue 3 projects
 
 ## How to install
 
 ```bash
-npm install -D eslint @acdh-oeaw/eslint-config
+npm install -D eslint globals @types/eslint @acdh-oeaw/eslint-config
 # additional configs
 npm install -D @acdh-oeaw/eslint-config-vue @acdh-oeaw/eslint-config-nuxt
 ```
 
-Add the configs to `package.json`:
+Add the configs to `eslint.config.js`:
 
-```json
-{
-	"eslintConfig": {
-		"extends": [
-			"@acdh-oeaw/eslint-config",
-			"@acdh-oeaw/eslint-config-vue",
-			"@acdh-oeaw/eslint-config-nuxt"
-		]
-	}
-}
+```js
+/** @typedef {import("eslint").Linter.Config} Config */
+
+import baseConfig from "@acdh-oeaw/eslint-config";
+import nextConfig from "@acdh-oeaw/eslint-config-next";
+import reactConfig from "@acdh-oeaw/eslint-config-react";
+
+/** @type {Array<Config>} */
+const config = [...baseConfig, ...reactConfig, ...nextConfig];
+
+export default config;
 ```
 
-Optionally, enable additional rules, or enable strict preset:
+Optionally, enable additional rules:
 
-```json
-{
-	"eslintConfig": {
-		"extends": [
-			"@acdh-oeaw/eslint-config",
-			"@acdh-oeaw/eslint-config/strict",
-			"@acdh-oeaw/eslint-config-vue",
-			"@acdh-oeaw/eslint-config-nuxt"
-		]
+```js
+/** @typedef {import("eslint").Linter.Config} Config */
+
+import baseConfig from "@acdh-oeaw/eslint-config";
+import nextConfig from "@acdh-oeaw/eslint-config-next";
+import reactConfig from "@acdh-oeaw/eslint-config-react";
+
+/** @type {Array<Config>} */
+const config = [
+	...baseConfig,
+	...reactConfig,
+	...nextConfig,
+	{
+		rules: {
+			"arrow-body-style": ["error", "always"],
+			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+			"@typescript-eslint/explicit-module-boundary-types": "error",
+			"@typescript-eslint/require-array-sort-compare": "error",
+			"@typescript-eslint/strict-boolean-expressions": "error",
+			"react/jsx-sort-props": ["error", { reservedFirst: true }],
+		},
 	},
-	"rules": {
-		"@typescript-eslint/require-array-sort-compare": "error",
-		"@typescript-eslint/strict-boolean-expressions": "error",
-		"@typescript-eslint/explicit-module-boundary-types": "error"
-	}
-}
+];
+
+export default config;
 ```
 
 ## How to use
@@ -62,7 +73,7 @@ Add a script to `package.json`:
 
 ```json
 {
-	"lint:check": "eslint . --cache --ignore-path .gitignore",
+	"lint:check": "eslint . --cache",
 	"lint:fix": "npm run lint:check -- --fix"
 }
 ```
@@ -72,7 +83,7 @@ You can then run `npm run lint:check` to lint, and `npm run lint:fix` to fix aut
 ## How to run with Git hooks
 
 ```bash
-npm install -D lint-staged npm-run-all simple-git-hooks
+npm install -D lint-staged npm-run-all2 simple-git-hooks
 ```
 
 To run the linter on every Git commit, add the following to package.json:
@@ -82,7 +93,7 @@ To run the linter on every Git commit, add the following to package.json:
 	"scripts": {
 		"format:check": "prettier . --cache --check --ignore-path .gitignore",
 		"format:fix": "npm run format:check -- --write",
-		"lint:check": "eslint . --cache --ignore-path .gitignore",
+		"lint:check": "eslint . --cache",
 		"lint:fix": "npm run lint:check -- --fix",
 		"prepare": "npm run setup",
 		"setup": "is-ci || simple-git-hooks",
@@ -98,6 +109,12 @@ To run the linter on every Git commit, add the following to package.json:
 	}
 }
 ```
+
+## Ignore `.gitignore` files
+
+Either use
+[`includeIgnoreFile` from `@eslint/compat`](https://eslint.org/docs/latest/use/configure/ignore#including-gitignore-files),
+or [`eslint-config-flat-gitignore`](https://github.com/antfu/eslint-config-flat-gitignore).
 
 ## Editor integrations
 

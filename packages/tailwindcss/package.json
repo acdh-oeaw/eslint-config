@@ -1,6 +1,6 @@
 {
-	"name": "@acdh-oeaw/eslint-config-react",
-	"version": "1.0.12",
+	"name": "@acdh-oeaw/eslint-config-tailwindcss",
+	"version": "1.0.0",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
@@ -15,17 +15,13 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-jsx-a11y": "^6.10.0",
-		"eslint-plugin-react": "^7.35.2",
-		"eslint-plugin-react-compiler": "0.0.0-experimental-b8a7b48-20240903",
-		"eslint-plugin-react-hooks": "5.1.0-rc-b57d2823-20240822"
+		"eslint-plugin-tailwindcss": "^3.17.4"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
 		"@types/eslint": "^9.6.1",
-		"@types/eslint-plugin-jsx-a11y": "^6.9.0",
 		"globals": "^15.9.0"
 	}
 }

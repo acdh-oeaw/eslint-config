@@ -1,43 +1,51 @@
-/** @type {import('eslint').Linter.Config} */
-const config = {
-	settings: {
-		/** @see https://github.com/nuxt/nuxt/issues/22994 */
-		"import/resolver": {
-			typescript: {
-				project: "./.nuxt/tsconfig.json",
-				alwaysTryTypes: true,
-			},
+// import nuxtConfig from "@next/eslint-config";
+// import globals from "globals";
+import ts from "typescript-eslint";
+
+/**
+ * Note that we *don't* add the nuxt eslint config here.
+ * We rather depend on the [`@nuxt/eslint` module](https://eslint.nuxt.com/packages/module),
+ * which will also set up auto-imports as globals.
+ * Make sure to set `standalone` to `false` when setting up `@nuxt/eslint` since we provide
+ * out own js, ts, and vue configs.
+ */
+const config = ts.config({
+	name: "acdh-oeaw/nuxt-config",
+	files: ["**/*.vue"],
+	languageOptions: {
+		/**
+		 * Auto-imports support for `vue`.
+		 *
+		 * @see https://eslint.vuejs.org/user-guide/#auto-imports-support
+		 * @see https://github.com/vuejs/eslint-plugin-vue/pull/2422
+		 */
+		globals: {
+			computed: "readonly",
+			defineEmits: "readonly",
+			defineExpose: "readonly",
+			defineProps: "readonly",
+			onMounted: "readonly",
+			onUnmounted: "readonly",
+			reactive: "readonly",
+			ref: "readonly",
+			shallowReactive: "readonly",
+			shallowRef: "readonly",
+			toRef: "readonly",
+			toRefs: "readonly",
+			watch: "readonly",
+			watchEffect: "readonly",
 		},
 	},
-	overrides: [
-		{
-			files: ["./**/*.vue"],
-			extends: ["plugin:eslint-plugin-nuxt/recommended"],
-			rules: {
-				/**
-				 * Does not work with nuxt auto-imports.
-				 * @see https://github.com/antfu/unplugin-auto-import/issues/3
-				 */
-				"no-undef": "off",
-				/**
-				 * Allow single emit function as `defineEmits` interface.
-				 */
-				"@typescript-eslint/prefer-function-type": "off",
-				"vuejs-accessibility/anchor-has-content": [
-					"error",
-					{
-						components: ["NuxtLink"],
-					},
-				],
-			},
-		},
-		{
-			files: ["./src/layouts/**/*.vue", "./src/pages/**/*.vue"],
-			rules: {
-				"vue/no-multiple-template-root": "error",
-			},
-		},
-	],
-};
+	rules: {
+		/**
+		 * Allow single emit function as `defineEmits` interface.
+		 */
+		"@typescript-eslint/prefer-function-type": "off",
+		"vuejs-accessibility/anchor-has-content": [
+			"error",
+			{ components: ["NuxtLink", "NuxtLocaleLink"] },
+		],
+	},
+});
 
-module.exports = config;
+export default config;

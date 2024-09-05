@@ -2,18 +2,26 @@
 	"name": "@acdh-oeaw/eslint-config-next",
 	"version": "1.0.15",
 	"licence": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
 	"main": "./config.js",
 	"exports": {
 		".": "./config.js"
 	},
 	"files": [
+		"./config.d.ts",
 		"./config.js"
 	],
-	"dependencies": {
-		"@next/eslint-plugin-next": "^14.2.5"
-	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*",
-		"@acdh-oeaw/eslint-config-react": "workspace:*"
+		"@acdh-oeaw/eslint-config-react": "workspace:*",
+		"@next/eslint-plugin-next": "^15.0.0-rc.0"
+	},
+	"devDependencies": {
+		"@next/eslint-plugin-next": "15.0.0-rc.0",
+		"@types/eslint": "^9.6.1",
+		"globals": "^15.9.0"
 	}
 }

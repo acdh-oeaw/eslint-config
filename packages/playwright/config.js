@@ -1,11 +1,11 @@
-/** @type {import('eslint').Linter.Config} */
-const config = {
-	overrides: [
-		{
-			files: ["./e2e/**/*.@(spec|test).@(ts|tsx)"],
-			extends: "plugin:playwright/recommended",
-		},
-	],
-};
+import playwrightPlugin from "eslint-plugin-playwright";
+// import globals from "globals";
+import ts from "typescript-eslint";
 
-module.exports = config;
+const config = ts.config({
+	name: "acdh-oeaw/playwright-config",
+	...playwrightPlugin.configs["flat/recommended"],
+	files: ["./e2e/**/*.@(spec|test).@(ts|tsx)"],
+});
+
+export default config;
