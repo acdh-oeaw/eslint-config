@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-mdx",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {

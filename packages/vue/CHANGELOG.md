@@ -1,5 +1,19 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 2.0.0
+
+### Patch Changes
+
+- [#39](https://github.com/acdh-oeaw/eslint-config/pull/39)
+  [`8b9edf7`](https://github.com/acdh-oeaw/eslint-config/commit/8b9edf7a5e53f104b7693a990984c2925c57c579)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - handle namespaced components when
+  checking component name casing
+
+- Updated dependencies
+  [[`8b9edf7`](https://github.com/acdh-oeaw/eslint-config/commit/8b9edf7a5e53f104b7693a990984c2925c57c579),
+  [`8b9edf7`](https://github.com/acdh-oeaw/eslint-config/commit/8b9edf7a5e53f104b7693a990984c2925c57c579)]:
+  - @acdh-oeaw/eslint-config@2.0.0
+
 ## 1.0.15
 
 ### Patch Changes
