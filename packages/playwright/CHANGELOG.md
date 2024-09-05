@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-playwright
 
+## 2.0.1
+
+### Patch Changes
+
+- [`09cf55e`](https://github.com/acdh-oeaw/eslint-config/commit/09cf55e9212254a1d645e5af1b3db530580f5ee3)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix file globs
+
 ## 2.0.0
 
 ### Patch Changes
