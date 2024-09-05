@@ -1,5 +1,15 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.4
+
+### Patch Changes
+
+- [`09cf55e`](https://github.com/acdh-oeaw/eslint-config/commit/09cf55e9212254a1d645e5af1b3db530580f5ee3)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix file globs
+
+- [`4a9d835`](https://github.com/acdh-oeaw/eslint-config/commit/4a9d835674f4404b3e2bd575ecdfc4dabce8943f)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow node globals in next config files
+
 ## 2.0.3
 
 ### Patch Changes
