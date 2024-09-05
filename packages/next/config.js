@@ -27,6 +27,7 @@ const config = ts.config(
 			"@next/next/no-typos": "off",
 
 			"import-x/no-default-export": "error",
+			"react/react-in-jsx-scope": "off",
 		},
 	},
 	{
