@@ -1,5 +1,20 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- [#39](https://github.com/acdh-oeaw/eslint-config/pull/39)
+  [`8b9edf7`](https://github.com/acdh-oeaw/eslint-config/commit/8b9edf7a5e53f104b7693a990984c2925c57c579)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add eslint v9 compatibility, convert to
+  flat config
+
+### Patch Changes
+
+- [#39](https://github.com/acdh-oeaw/eslint-config/pull/39)
+  [`8b9edf7`](https://github.com/acdh-oeaw/eslint-config/commit/8b9edf7a5e53f104b7693a990984c2925c57c579)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enforce curly braces for if/else blocks
+
 ## 1.0.10
 
 ### Patch Changes
