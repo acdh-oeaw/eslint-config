@@ -1,6 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 // import nextPlugin from "@next/eslint-plugin-next";
-// import globals from "globals";
+import globals from "globals";
 import ts from "typescript-eslint";
 
 const compat = new FlatCompat({
@@ -61,6 +61,15 @@ const config = ts.config(
 		],
 		rules: {
 			"import-x/no-default-export": "off",
+		},
+	},
+	{
+		name: "@acdh-oeaw/next-config/node-globals",
+		files: ["next.config.*", "config/env.config.*"],
+		languageOptions: {
+			globals: {
+				...globals.nodeBuiltin,
+			},
 		},
 	},
 );
