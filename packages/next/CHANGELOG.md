@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.1
+
+### Patch Changes
+
+- [`d376d1e`](https://github.com/acdh-oeaw/eslint-config/commit/d376d1e173629d7c4d96b01b5106336bcdc5e122)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow next 14
+
 ## 2.0.0
 
 ### Patch Changes
