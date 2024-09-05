@@ -36,6 +36,7 @@
 	},
 	"pnpm": {
 		"overrides": {
+			"@commitlint/config-conventional": "$@commitlint/cli",
 			"@typescript-eslint/utils": "^8.1.0"
 		}
 	},
