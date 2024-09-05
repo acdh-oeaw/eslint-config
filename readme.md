@@ -18,21 +18,21 @@ Shared configuration presets for [`eslint`](https://eslint.org/).
 ## How to install
 
 ```bash
-npm install -D eslint globals @types/eslint @acdh-oeaw/eslint-config
+npm install -D eslint globals @acdh-oeaw/eslint-config
 # additional configs
-npm install -D @acdh-oeaw/eslint-config-vue @acdh-oeaw/eslint-config-nuxt
+npm install -D @acdh-oeaw/eslint-config-react @acdh-oeaw/eslint-config-next
 ```
 
 Add the configs to `eslint.config.js`:
 
 ```js
-/** @typedef {import("eslint").Linter.Config} Config */
+/** @typedef {import("typescript-eslint").Config} Config */
 
 import baseConfig from "@acdh-oeaw/eslint-config";
 import nextConfig from "@acdh-oeaw/eslint-config-next";
 import reactConfig from "@acdh-oeaw/eslint-config-react";
 
-/** @type {Array<Config>} */
+/** @type {Config} */
 const config = [...baseConfig, ...reactConfig, ...nextConfig];
 
 export default config;
@@ -41,14 +41,16 @@ export default config;
 Optionally, enable additional rules:
 
 ```js
-/** @typedef {import("eslint").Linter.Config} Config */
+/** @typedef {import("typescript-eslint").Config} Config */
 
 import baseConfig from "@acdh-oeaw/eslint-config";
 import nextConfig from "@acdh-oeaw/eslint-config-next";
 import reactConfig from "@acdh-oeaw/eslint-config-react";
+import gitignore from "eslint-config-flat-gitignore";
 
-/** @type {Array<Config>} */
+/** @type {Config} */
 const config = [
+	gitignore(),
 	...baseConfig,
 	...reactConfig,
 	...nextConfig,
