@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.3
+
+### Patch Changes
+
+- [`15d4431`](https://github.com/acdh-oeaw/eslint-config/commit/15d44318c98d1ac22ed0ec28f9de870ae250f021)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable react-in-jsx-scope in next.js
+
 ## 2.0.2
 
 ### Patch Changes
