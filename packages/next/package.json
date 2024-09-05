@@ -17,7 +17,7 @@
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*",
 		"@acdh-oeaw/eslint-config-react": "workspace:*",
-		"@next/eslint-plugin-next": "^15.0.0-rc.0"
+		"@next/eslint-plugin-next": "^14.2.8 || ^15.0.0-rc.0"
 	},
 	"devDependencies": {
 		"@next/eslint-plugin-next": "15.0.0-rc.0",
