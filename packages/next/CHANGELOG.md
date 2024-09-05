@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.2
+
+### Patch Changes
+
+- [`7334a34`](https://github.com/acdh-oeaw/eslint-config/commit/7334a3496bb1439b696eb363417ea7eea09da75f)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable rules irrelevant for next.js
+  app router
+
 ## 2.0.1
 
 ### Patch Changes
