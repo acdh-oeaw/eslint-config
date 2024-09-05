@@ -13,6 +13,19 @@ const config = ts.config(
 	{
 		name: "acdh-oeaw/next-config",
 		rules: {
+			/** These rules are not relevent for app router and `next/font`. */
+			"@next/next/google-font-display": "off",
+			"@next/next/google-font-preconnect": "off",
+			"@next/next/no-assign-module-variable": "off",
+			"@next/next/no-before-interactive-script-outside-document": "off",
+			"@next/next/no-document-import-in-page": "off",
+			"@next/next/no-duplicate-head": "off",
+			"@next/next/no-head-import-in-document": "off",
+			"@next/next/no-script-component-in-head": "off",
+			"@next/next/no-styled-jsx-in-document": "off",
+			"@next/next/no-title-in-document-head": "off",
+			"@next/next/no-typos": "off",
+
 			"import-x/no-default-export": "error",
 		},
 	},
