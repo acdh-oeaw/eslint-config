@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 2.0.2
+
+### Patch Changes
+
+- [`72d9dcc`](https://github.com/acdh-oeaw/eslint-config/commit/72d9dcc5967feb3da14ef24c2eb8c140aa7c910f)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable type-aware rules for vue
+
 ## 2.0.1
 
 ### Patch Changes
