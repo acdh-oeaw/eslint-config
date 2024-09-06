@@ -68,7 +68,7 @@ const config = ts.config(
 		/**
 		 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
 		 */
-		...ts.configs.disableTypeChecked.rules,
+		...ts.configs.disableTypeChecked,
 	},
 );
 

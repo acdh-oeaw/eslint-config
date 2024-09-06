@@ -100,7 +100,7 @@ import baseConfig from "@acdh-oeaw/eslint-config";
 import nuxtConfig from "@acdh-oeaw/eslint-config-nuxt";
 import vueConfig from "@acdh-oeaw/eslint-config-vue";
 
-import withNuxt from "./.nuxt/eslint.config.mjs";
+import { withNuxt } from "./.nuxt/eslint.config.mjs";
 
 /** @type {Config} */
 const config = [...baseConfig, ...vueConfig, ...nuxtConfig];
