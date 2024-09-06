@@ -69,6 +69,45 @@ const config = [
 export default config;
 ```
 
+### How to install in Nuxt
+
+For nuxt projects, you need to use the [`@nuxt/eslint`](https://eslint.nuxt.com/packages/module)
+module, so `eslint` understands nuxt auto-imports.
+
+```bash
+npx nuxi module add eslint
+```
+
+In `nuxt.config.ts`, configure the module for "standalone" mode, since we provide our own config:
+
+```ts
+export default defineNuxtConfig({
+	modules: ["@nuxt/eslint"],
+	eslint: {
+		config: {
+			standalone: true,
+		},
+	},
+});
+```
+
+Pass our config to `withNuxt` in `eslint.config.js`:
+
+```ts
+/** @typedef {import("typescript-eslint").Config} Config */
+
+import baseConfig from "@acdh-oeaw/eslint-config";
+import nuxtConfig from "@acdh-oeaw/eslint-config-nuxt";
+import vueConfig from "@acdh-oeaw/eslint-config-vue";
+
+import withNuxt from "./.nuxt/eslint.config.mjs";
+
+/** @type {Config} */
+const config = [...baseConfig, ...vueConfig, ...nuxtConfig];
+
+export default withNuxt(config);
+```
+
 ## How to use
 
 Add a script to `package.json`:
