@@ -22,13 +22,8 @@ const config = ts.config(
 			parserOptions: {
 				ecmaVersion: 2023,
 				parser: tsParser,
-				projectService: null,
 			},
 		},
-		/**
-		 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
-		 */
-		...ts.configs.disableTypeChecked,
 		rules: {
 			"vue/block-order": ["error", { order: ["script", "template", "style"] }],
 			"vue/component-name-in-template-casing": [
@@ -60,6 +55,20 @@ const config = ts.config(
 				},
 			],
 		},
+	},
+	{
+		name: "acdh-oeaw/vue-config/disable-type-aware-rules",
+		files: ["**/*.vue"],
+		languageOptions: {
+			parserOptions: {
+				ecmaVersion: 2023,
+				projectService: null,
+			},
+		},
+		/**
+		 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
+		 */
+		...ts.configs.disableTypeChecked.rules,
 	},
 );
 

@@ -7,7 +7,7 @@ import ts from "typescript-eslint";
  * We rather depend on the [`@nuxt/eslint` module](https://eslint.nuxt.com/packages/module),
  * which will also set up auto-imports as globals.
  * Make sure to set `standalone` to `false` when setting up `@nuxt/eslint` since we provide
- * out own js, ts, and vue configs.
+ * our own js, ts, and vue configs.
  */
 const config = ts.config({
 	name: "acdh-oeaw/nuxt-config",
