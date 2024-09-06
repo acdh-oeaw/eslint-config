@@ -1,4 +1,5 @@
 import tsParser from "@typescript-eslint/parser";
+import prettier from "eslint-config-prettier";
 import vuePlugin from "eslint-plugin-vue";
 import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 // import globals from "globals";
@@ -70,6 +71,7 @@ const config = ts.config(
 		 */
 		...ts.configs.disableTypeChecked,
 	},
+	prettier,
 );
 
 export default config;

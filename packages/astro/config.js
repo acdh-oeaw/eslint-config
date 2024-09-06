@@ -1,3 +1,4 @@
+import prettier from "eslint-config-prettier";
 import astroPlugin from "eslint-plugin-astro";
 // import globals from "globals";
 import ts from "typescript-eslint";
@@ -51,6 +52,7 @@ const config = ts.config(
 		},
 		...ts.configs.disableTypeChecked,
 	},
+	prettier,
 );
 
 export default config;

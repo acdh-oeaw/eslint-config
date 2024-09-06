@@ -15,6 +15,7 @@
 		"./config.js"
 	],
 	"dependencies": {
+		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-astro": "^1.2.3",
 		"eslint-plugin-jsx-a11y": "^6.10.0"
 	},
@@ -23,6 +24,7 @@
 	},
 	"devDependencies": {
 		"@types/eslint": "^9.6.1",
+		"@types/eslint-config-prettier": "^6.11.3",
 		"globals": "^15.9.0"
 	}
 }

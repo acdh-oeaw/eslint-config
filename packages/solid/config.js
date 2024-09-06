@@ -1,4 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc";
+import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import solidJsPlugin from "eslint-plugin-solid";
 // import globals from "globals";
@@ -35,6 +36,7 @@ const config = ts.config(
 			],
 		},
 	},
+	prettier,
 );
 
 export default config;
