@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-nuxt
 
+## 2.0.4
+
+### Patch Changes
+
+- [`0601d86`](https://github.com/acdh-oeaw/eslint-config/commit/0601d86d84cdb79322494f8a75c6627ab0cff01d)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - improve globals and a11y, cleanup
+
+- Updated dependencies
+  [[`0601d86`](https://github.com/acdh-oeaw/eslint-config/commit/0601d86d84cdb79322494f8a75c6627ab0cff01d)]:
+  - @acdh-oeaw/eslint-config@2.0.1
+  - @acdh-oeaw/eslint-config-vue@2.0.4
+
 ## 2.0.3
 
 ### Patch Changes

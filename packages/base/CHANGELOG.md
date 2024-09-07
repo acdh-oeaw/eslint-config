@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.1
+
+### Patch Changes
+
+- [`0601d86`](https://github.com/acdh-oeaw/eslint-config/commit/0601d86d84cdb79322494f8a75c6627ab0cff01d)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - improve globals and a11y, cleanup
+
 ## 2.0.0
 
 ### Major Changes
