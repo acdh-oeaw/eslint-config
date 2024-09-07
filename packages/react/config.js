@@ -1,4 +1,3 @@
-import { FlatCompat } from "@eslint/eslintrc";
 import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
@@ -7,21 +6,9 @@ import reactHooksPlugin from "eslint-plugin-react-hooks";
 // import globals from "globals";
 import ts from "typescript-eslint";
 
-const compat = new FlatCompat({
-	baseDirectory: import.meta.dirname,
-});
-
 const config = ts.config(
-	// {
-	// 	languageOptions: {
-	// 		globals: {
-	// 			...globals.browser,
-	// 			...globals.nodeBuiltin,
-	// 		},
-	// 	},
-	// },
-	reactPlugin.configs.flat["jsx-runtime"],
 	reactPlugin.configs.flat.recommended,
+	reactPlugin.configs.flat["jsx-runtime"],
 	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		name: "acdh-oeaw/react-config",

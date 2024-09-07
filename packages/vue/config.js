@@ -6,14 +6,6 @@ import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 import ts from "typescript-eslint";
 
 const config = ts.config(
-	// {
-	// 	languageOptions: {
-	// 		globals: {
-	// 			...globals.browser,
-	// 			...globals.nodeBuiltin,
-	// 		},
-	// 	},
-	// },
 	...vuePlugin.configs["flat/recommended"],
 	...vueAccessibilityPlugin.configs["flat/recommended"],
 	{
@@ -49,7 +41,6 @@ const config = ts.config(
 			"vuejs-accessibility/anchor-has-content": ["error", { components: ["RouterLink"] }],
 			"vuejs-accessibility/label-has-for": ["error", { required: { some: ["nesting", "id"] } }],
 			"vuejs-accessibility/no-autofocus": ["error", { ignoreNonDOM: true }],
-			"vuejs-accessibility/no-onchange": "off",
 			"vuejs-accessibility/no-redundant-roles": [
 				"error",
 				{

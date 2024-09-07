@@ -8,7 +8,6 @@ const compat = new FlatCompat({
 });
 
 const config = ts.config(
-	// @ts-expect-error Type incompatibility between `eslint` and `typescript-eslint`.
 	...compat.extends("plugin:@next/eslint-plugin-next/core-web-vitals"),
 	{
 		name: "acdh-oeaw/next-config",
@@ -27,7 +26,6 @@ const config = ts.config(
 			"@next/next/no-typos": "off",
 
 			"import-x/no-default-export": "error",
-			"react/react-in-jsx-scope": "off",
 		},
 	},
 	{
@@ -65,10 +63,19 @@ const config = ts.config(
 	},
 	{
 		name: "@acdh-oeaw/next-config/node-globals",
-		files: ["next.config.*", "config/env.config.*"],
+		files: ["next.config.*", "config/env.config.*", "scripts/**", "**/actions/**"],
 		languageOptions: {
 			globals: {
 				...globals.nodeBuiltin,
+			},
+		},
+	},
+	{
+		name: "@acdh-oeaw/next-config/browser-globals",
+		ignores: ["next.config.*", "config/env.config.*", "scripts/**", "**/actions/**"],
+		languageOptions: {
+			globals: {
+				...globals.browser,
 			},
 		},
 	},

@@ -1,15 +1,15 @@
 import nodePlugin from "eslint-plugin-n";
-// import globals from "globals";
+import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(
-	// {
-	// 	languageOptions: {
-	// 		globals: {
-	// 			...globals.nodeBuiltin,
-	// 		},
-	// 	},
-	// },
+	{
+		languageOptions: {
+			globals: {
+				...globals.nodeBuiltin,
+			},
+		},
+	},
 	nodePlugin.configs["flat/recommended-module"],
 	{
 		name: "acdh-oeaw/node-config",
