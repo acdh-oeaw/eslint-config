@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.6
+
+### Patch Changes
+
+- [`0601d86`](https://github.com/acdh-oeaw/eslint-config/commit/0601d86d84cdb79322494f8a75c6627ab0cff01d)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - improve globals and a11y, cleanup
+
+- Updated dependencies
+  [[`0601d86`](https://github.com/acdh-oeaw/eslint-config/commit/0601d86d84cdb79322494f8a75c6627ab0cff01d)]:
+  - @acdh-oeaw/eslint-config-react@2.0.2
+  - @acdh-oeaw/eslint-config@2.0.1
+
 ## 2.0.5
 
 ### Patch Changes
