@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-nuxt
 
+## 2.0.5
+
+### Patch Changes
+
+- [`fde22ef`](https://github.com/acdh-oeaw/eslint-config/commit/fde22efe9ad2cd55e0e980acf5168ea323e9625b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix globals
+
 ## 2.0.4
 
 ### Patch Changes
