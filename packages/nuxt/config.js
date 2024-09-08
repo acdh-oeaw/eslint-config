@@ -1,5 +1,5 @@
 // import nuxtConfig from "@next/eslint-config";
-// import globals from "globals";
+import globals from "globals";
 import ts from "typescript-eslint";
 
 /**
