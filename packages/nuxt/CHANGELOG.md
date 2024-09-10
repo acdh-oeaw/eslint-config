@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-nuxt
 
+## 2.0.6
+
+### Patch Changes
+
+- [`ace149b`](https://github.com/acdh-oeaw/eslint-config/commit/ace149be6c2a99dabefeb54d9fd6d94d02073fa1)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable no-undef in .vue files, which
+  does not work with nuxt auto-imports
+
 ## 2.0.5
 
 ### Patch Changes
