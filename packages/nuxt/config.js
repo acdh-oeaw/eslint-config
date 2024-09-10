@@ -39,6 +39,12 @@ const config = ts.config(
 		},
 		rules: {
 			/**
+			 * Does not work with nuxt auto-imports.
+			 *
+			 * @see https://github.com/antfu/unplugin-auto-import/issues/3
+			 */
+			"no-undef": "off",
+			/**
 			 * Allow single emit function as `defineEmits` interface.
 			 */
 			"@typescript-eslint/prefer-function-type": "off",
