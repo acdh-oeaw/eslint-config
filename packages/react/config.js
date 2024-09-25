@@ -48,23 +48,6 @@ const config = ts.config(
 			"react-compiler/react-compiler": "error",
 		},
 	},
-	{
-		name: "acdh-oeaw/react-config/allow-async-props",
-		files: ["**/*.tsx"],
-		rules: {
-			/**
-			 * JSX event handler props generally only accept `void` return type, but inline react server
-			 * actions must be async. also, some libraries like `react-hook-form` expect to be able to
-			 * pass promise-returning callbacks.
-			 *
-			 * @see https://github.com/typescript-eslint/typescript-eslint/issues/4650
-			 */
-			"@typescript-eslint/no-misused-promises": [
-				"error",
-				{ checksVoidReturn: { arguments: false, attributes: false } },
-			],
-		},
-	},
 	prettier,
 );
 
