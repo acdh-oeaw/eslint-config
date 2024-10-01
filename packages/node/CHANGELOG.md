@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-node
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  [[`7c152de`](https://github.com/acdh-oeaw/eslint-config/commit/7c152dea7b126866be8262f5e68d0ff7acc1af4f)]:
+  - @acdh-oeaw/eslint-config@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes
