@@ -89,6 +89,11 @@ const config = ts.config(
 			"import-x/no-duplicates": ["error", { "prefer-inline": true }],
 			"simple-import-sort/imports": "error",
 			"simple-import-sort/exports": "error",
+
+			/** Already handled by typescript. */
+			"import-x/default": "off",
+			"import-x/named": "off",
+			"import-x/namespace": "off",
 		},
 	},
 	{
