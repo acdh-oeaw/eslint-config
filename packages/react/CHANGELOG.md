@@ -1,5 +1,21 @@
 # @acdh-oeaw/eslint-config-react
 
+## 2.0.3
+
+### Patch Changes
+
+- [`6e1233f`](https://github.com/acdh-oeaw/eslint-config/commit/6e1233fb459b1b4ee51b0eabdbf7ebb4fb0fcdbc)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - remove workaround for async action prop
+  in react, which is no longer necessary
+
+- [`da5e1a5`](https://github.com/acdh-oeaw/eslint-config/commit/da5e1a5b20c05db1faa77ce2950b634dde3383ba)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - ensure jsx-a11y plugin has eslint v9
+  support
+
+- Updated dependencies
+  [[`7c152de`](https://github.com/acdh-oeaw/eslint-config/commit/7c152dea7b126866be8262f5e68d0ff7acc1af4f)]:
+  - @acdh-oeaw/eslint-config@2.0.2
+
 ## 2.0.2
 
 ### Patch Changes

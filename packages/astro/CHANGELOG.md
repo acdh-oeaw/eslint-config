@@ -1,5 +1,17 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 2.0.3
+
+### Patch Changes
+
+- [`da5e1a5`](https://github.com/acdh-oeaw/eslint-config/commit/da5e1a5b20c05db1faa77ce2950b634dde3383ba)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - ensure jsx-a11y plugin has eslint v9
+  support
+
+- Updated dependencies
+  [[`7c152de`](https://github.com/acdh-oeaw/eslint-config/commit/7c152dea7b126866be8262f5e68d0ff7acc1af4f)]:
+  - @acdh-oeaw/eslint-config@2.0.2
+
 ## 2.0.2
 
 ### Patch Changes
