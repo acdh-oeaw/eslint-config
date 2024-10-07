@@ -17,7 +17,7 @@
 	"dependencies": {
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-jsx-a11y": "^6.10.0",
-		"eslint-plugin-react": "^7.37.0",
+		"eslint-plugin-react": "^7.37.1",
 		"eslint-plugin-react-compiler": "0.0.0-experimental-b8a7b48-20240903",
 		"eslint-plugin-react-hooks": "5.1.0-rc-b57d2823-20240822"
 	},
@@ -28,6 +28,6 @@
 		"@types/eslint": "^9.6.1",
 		"@types/eslint-config-prettier": "^6.11.3",
 		"@types/eslint-plugin-jsx-a11y": "^6.9.0",
-		"globals": "^15.9.0"
+		"globals": "^15.10.0"
 	}
 }
