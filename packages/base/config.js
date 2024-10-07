@@ -39,7 +39,9 @@ const config = ts.config(
 			"no-param-reassign": "error",
 			"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
 			"no-throw-literal": "error",
-			// "prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+			"prefer-const": "error",
+			"prefer-template": "error",
 			"require-atomic-updates": "error",
 			"@typescript-eslint/array-type": ["error", { default: "generic" }],
 			"@typescript-eslint/consistent-type-exports": [
