@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.3
+
+### Patch Changes
+
+- [`b56a7eb`](https://github.com/acdh-oeaw/eslint-config/commit/b56a7ebffcdc1150604206a38df5a8523f4aeb55)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - prefer const and template strings
+
 ## 2.0.2
 
 ### Patch Changes
