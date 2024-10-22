@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.9
+
+### Patch Changes
+
+- [`ab39d3e`](https://github.com/acdh-oeaw/eslint-config/commit/ab39d3e0b16ff700b2678c2b276ad1acfc8958a1)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add next 15 to dependency range
+
 ## 2.0.8
 
 ### Patch Changes
