@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.4
+
+### Patch Changes
+
+- [`0451055`](https://github.com/acdh-oeaw/eslint-config/commit/0451055b11dbee4b47290b1becec0dd66965ab41)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - handle eslint-config-prettier special
+  rules
+
 ## 2.0.3
 
 ### Patch Changes
