@@ -112,7 +112,7 @@ const config = ts.config(
 		 */
 		rules: {
 			// "arrow-body-style": ["error", "always"],
-			curly: "error",
+			curly: ["error", "all"],
 			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
 		},
 	},

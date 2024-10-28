@@ -16,7 +16,7 @@
 	],
 	"dependencies": {
 		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-vue": "^9.29.0",
+		"eslint-plugin-vue": "^9.30.0",
 		"eslint-plugin-vuejs-accessibility": "^2.4.1"
 	},
 	"peerDependencies": {
