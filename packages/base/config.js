@@ -31,15 +31,12 @@ const config = ts.config(
 			reportUnusedDisableDirectives: true,
 		},
 		rules: {
-			// "arrow-body-style": ["error", "always"],
-			curly: "error",
 			eqeqeq: ["error", "always", { null: "ignore" }],
 			"no-console": ["warn", { allow: ["warn", "error"] }],
 			"no-implicit-coercion": "error",
 			"no-param-reassign": "error",
 			"no-restricted-globals": ["error", { name: "isNaN", message: "Use Number.isNaN instead." }],
 			"no-throw-literal": "error",
-			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
 			"prefer-const": "error",
 			"prefer-template": "error",
 			"require-atomic-updates": "error",
@@ -107,6 +104,18 @@ const config = ts.config(
 	},
 	regexpPlugin.configs["flat/recommended"],
 	prettier,
+	{
+		/**
+		 * These are intentionally placed after the prettier config.
+		 *
+		 * @see https://github.com/prettier/eslint-config-prettier#special-rules
+		 */
+		rules: {
+			// "arrow-body-style": ["error", "always"],
+			curly: "error",
+			"prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
+		},
+	},
 );
 
 export default config;
