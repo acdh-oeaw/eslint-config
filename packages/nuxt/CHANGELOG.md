@@ -1,5 +1,15 @@
 # @acdh-oeaw/eslint-config-nuxt
 
+## 2.0.9
+
+### Patch Changes
+
+- Updated dependencies
+  [[`55f7d42`](https://github.com/acdh-oeaw/eslint-config/commit/55f7d42fd580527eb66ec36e9f5d4e5bc9700c5b),
+  [`0451055`](https://github.com/acdh-oeaw/eslint-config/commit/0451055b11dbee4b47290b1becec0dd66965ab41)]:
+  - @acdh-oeaw/eslint-config-vue@2.0.7
+  - @acdh-oeaw/eslint-config@2.0.4
+
 ## 2.0.8
 
 ### Patch Changes

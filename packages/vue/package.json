@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-vue",
-	"version": "2.0.6",
+	"version": "2.0.7",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {

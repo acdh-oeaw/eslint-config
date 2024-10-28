@@ -1,5 +1,16 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 2.0.7
+
+### Patch Changes
+
+- [`55f7d42`](https://github.com/acdh-oeaw/eslint-config/commit/55f7d42fd580527eb66ec36e9f5d4e5bc9700c5b)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enforce self-closing components
+
+- Updated dependencies
+  [[`0451055`](https://github.com/acdh-oeaw/eslint-config/commit/0451055b11dbee4b47290b1becec0dd66965ab41)]:
+  - @acdh-oeaw/eslint-config@2.0.4
+
 ## 2.0.6
 
 ### Patch Changes
