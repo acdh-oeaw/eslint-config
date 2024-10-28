@@ -33,7 +33,7 @@ const config = ts.config(
 				},
 			],
 			"vue/component-api-style": "error",
-			"vue/html-self-closing": ["error", { html: { void: "any" } }],
+			"vue/html-self-closing": "error",
 			"vue/multi-word-component-names": "off",
 			"vue/padding-line-between-blocks": "error",
 			"vue/require-default-prop": "off",
