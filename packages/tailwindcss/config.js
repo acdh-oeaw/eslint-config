@@ -7,6 +7,7 @@ const config = ts.config(...tailwindcssPlugin.configs["flat/recommended"], {
 	settings: {
 		tailwindcss: {
 			callees: ["cn", "styles"],
+			ignoredKeys: ["combinations", "defaults"],
 		},
 	},
 });
