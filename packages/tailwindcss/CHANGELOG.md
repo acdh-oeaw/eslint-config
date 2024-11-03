@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 2.0.5
+
+### Patch Changes
+
+- [`5d64235`](https://github.com/acdh-oeaw/eslint-config/commit/5d6423584fa5c4cd14f2bf823b10a6899524369f)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - improve compat with stylelint-variants
+
 ## 2.0.4
 
 ### Patch Changes
