@@ -10,6 +10,9 @@ const config = ts.config(...tailwindcssPlugin.configs["flat/recommended"], {
 			ignoredKeys: ["combinations", "defaults"],
 		},
 	},
+	rules: {
+		"tailwindcss/migration-from-tailwind-2": "off",
+	},
 });
 
 export default config;
