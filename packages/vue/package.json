@@ -16,7 +16,7 @@
 	],
 	"dependencies": {
 		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-vue": "^9.30.0",
+		"eslint-plugin-vue": "^9.31.0",
 		"eslint-plugin-vuejs-accessibility": "^2.4.1"
 	},
 	"peerDependencies": {
@@ -25,6 +25,6 @@
 	"devDependencies": {
 		"@types/eslint": "^9.6.1",
 		"@types/eslint-config-prettier": "^6.11.3",
-		"globals": "^15.11.0"
+		"globals": "^15.12.0"
 	}
 }

@@ -6,7 +6,7 @@
 		"node": "22.x",
 		"pnpm": "9.x"
 	},
-	"packageManager": "pnpm@9.10.0",
+	"packageManager": "pnpm@9.12.3",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
@@ -26,7 +26,7 @@
 		"@changesets/changelog-github": "^0.5.0",
 		"@changesets/cli": "^2.27.9",
 		"@commitlint/cli": "^19.5.0",
-		"@types/node": "^22.8.1",
+		"@types/node": "^22.9.0",
 		"is-ci": "^3.0.1",
 		"lint-staged": "^15.2.10",
 		"npm-run-all2": "^7.0.1",
@@ -36,7 +36,7 @@
 	},
 	"pnpm": {
 		"overrides": {
-			"@typescript-eslint/utils": "^8.11.0"
+			"@typescript-eslint/utils": "^8.14.0"
 		}
 	},
 	"commitlint": {
