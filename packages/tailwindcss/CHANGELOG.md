@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 2.0.6
+
+### Patch Changes
+
+- [`316cf55`](https://github.com/acdh-oeaw/eslint-config/commit/316cf551cac4b3501672ef96ec51054204be057d)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable migration-from-tailwind-2 rule
+
 ## 2.0.5
 
 ### Patch Changes
