@@ -31,10 +31,11 @@ const config = ts.config(
 	{
 		name: "acdh-oeaw/next-config/allow-default-export",
 		files: [
-			// "**/*.d.ts",
+			"**/*.d.ts",
 
 			"*.config.@(js|ts|tsx)",
 
+			"instrumentation.ts",
 			"middleware.ts",
 
 			"app/manifest.ts",
@@ -56,6 +57,7 @@ const config = ts.config(
 
 			"i18n.ts",
 			"lib/i18n.ts",
+			"lib/i18n/get-request-config.ts",
 		],
 		rules: {
 			"import-x/no-default-export": "off",
