@@ -1,5 +1,18 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.11
+
+### Patch Changes
+
+- [`dfa9ca4`](https://github.com/acdh-oeaw/eslint-config/commit/dfa9ca47258ec5b7a6e3b5e7a44455dbf392cae5)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - avoid false positives for
+  no-default-export
+
+- Updated dependencies
+  [[`32572fc`](https://github.com/acdh-oeaw/eslint-config/commit/32572fc66f4f81a93869ea556c8e4020424ea632)]:
+  - @acdh-oeaw/eslint-config@2.0.5
+  - @acdh-oeaw/eslint-config-react@2.0.6
+
 ## 2.0.10
 
 ### Patch Changes
