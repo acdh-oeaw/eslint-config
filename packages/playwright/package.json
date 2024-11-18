@@ -15,7 +15,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-playwright": "^1.8.3"
+		"eslint-plugin-playwright": "^2.0.1"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"

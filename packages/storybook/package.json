@@ -15,7 +15,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-storybook": "^0.9.0"
+		"eslint-plugin-storybook": "^0.11.0"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
