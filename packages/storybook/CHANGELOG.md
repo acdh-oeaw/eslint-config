@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-storybook
 
+## 2.0.6
+
+### Patch Changes
+
+- [`01f3ca7`](https://github.com/acdh-oeaw/eslint-config/commit/01f3ca74cb51803a45cb599c7ff17d40e9a411c8)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - use storybook flat config
+
 ## 2.0.5
 
 ### Patch Changes
