@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import prettier from "eslint-config-prettier";
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import importPlugin from "eslint-plugin-import-x";
 import * as regexpPlugin from "eslint-plugin-regexp";
 import importSortPlugin from "eslint-plugin-simple-import-sort";
@@ -72,14 +73,14 @@ const config = ts.config(
 			// "import-x/parsers:": {
 			// 	'@typescript-eslint/parser': [".ts", ".tsx"]
 			// },
-			"import-x/resolver": {
-				typescript: {
+			"import-x/resolver-next": [
+				// TODO: consider https://github.com/9romise/eslint-import-resolver-oxc
+				createTypeScriptImportResolver({
 					alwaysTryTypes: true,
 					// extensions: [".js", ".ts", ".tsx"],
 					project: true,
-				},
-				// node: true,
-			},
+				}),
+			],
 		},
 		rules: {
 			"import-x/first": "error",
