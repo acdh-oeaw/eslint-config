@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.6
+
+### Patch Changes
+
+- [`469f1be`](https://github.com/acdh-oeaw/eslint-config/commit/469f1be04162a4eaa633499b06b97dfeea9a2d7e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - use new import resolver syntax
+
 ## 2.0.5
 
 ### Patch Changes
