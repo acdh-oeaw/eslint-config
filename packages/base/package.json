@@ -16,13 +16,13 @@
 	],
 	"dependencies": {
 		"@eslint/eslintrc": "^3.2.0",
-		"@eslint/js": "^9.15.0",
+		"@eslint/js": "^9.17.0",
 		"eslint-config-prettier": "^9.1.0",
-		"eslint-import-resolver-typescript": "^3.6.3",
-		"eslint-plugin-import-x": "^4.4.2",
+		"eslint-import-resolver-typescript": "^3.7.0",
+		"eslint-plugin-import-x": "^4.6.1",
 		"eslint-plugin-regexp": "^2.7.0",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
-		"typescript-eslint": "^8.15.0"
+		"typescript-eslint": "^8.18.1"
 	},
 	"peerDependencies": {
 		"eslint": "9.x",
@@ -34,6 +34,6 @@
 		"@types/eslint-config-prettier": "^6.11.3",
 		"@types/eslint__eslintrc": "^2.1.2",
 		"@types/eslint__js": "^8.42.3",
-		"globals": "^15.12.0"
+		"globals": "^15.14.0"
 	}
 }
