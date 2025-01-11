@@ -1,3 +1,4 @@
+import reactXPlugin from "@eslint-react/eslint-plugin";
 import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
@@ -9,6 +10,8 @@ import ts from "typescript-eslint";
 const config = ts.config(
 	reactPlugin.configs.flat.recommended,
 	reactPlugin.configs.flat["jsx-runtime"],
+	// TODO: enable preset and de-duplicate rules from eslint-plugin-react
+	// reactXPlugin.configs["recommended-type-checked"],
 	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		name: "acdh-oeaw/react-config",
@@ -35,6 +38,7 @@ const config = ts.config(
 					ol: ["list"],
 				},
 			],
+
 			"react/boolean-prop-naming": "error",
 			"react/button-has-type": "error",
 			"react/function-component-definition": "error",
@@ -45,7 +49,17 @@ const config = ts.config(
 			// "react/jsx-sort-props": ["error", { reservedFirst: true }],
 			"react/no-unstable-nested-components": "error",
 			"react/prop-types": "off",
+
 			"react-compiler/react-compiler": "error",
+		},
+	},
+	{
+		name: "acdh-oeaw/react-x-config",
+		plugins: {
+			"react-x": reactXPlugin,
+		},
+		rules: {
+			"react-x/no-missing-key": "error",
 		},
 	},
 	prettier,
