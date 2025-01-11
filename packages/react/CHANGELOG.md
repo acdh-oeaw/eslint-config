@@ -1,5 +1,16 @@
 # @acdh-oeaw/eslint-config-react
 
+## 2.0.7
+
+### Patch Changes
+
+- [`38b0f03`](https://github.com/acdh-oeaw/eslint-config/commit/38b0f03e41a2af93810c2bbd00567f91eabf0bcc)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - error on missing key
+
+- Updated dependencies
+  [[`469f1be`](https://github.com/acdh-oeaw/eslint-config/commit/469f1be04162a4eaa633499b06b97dfeea9a2d7e)]:
+  - @acdh-oeaw/eslint-config@2.0.6
+
 ## 2.0.6
 
 ### Patch Changes
