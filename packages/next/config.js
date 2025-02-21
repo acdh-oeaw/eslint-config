@@ -32,6 +32,7 @@ const config = ts.config(
 		name: "acdh-oeaw/next-config/allow-default-export",
 		files: [
 			"**/*.d.ts",
+			"**/*.d.json.ts",
 
 			"*.config.@(js|ts|tsx)",
 
