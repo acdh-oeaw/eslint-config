@@ -1,5 +1,15 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.7
+
+### Patch Changes
+
+- [`9dd8c24`](https://github.com/acdh-oeaw/eslint-config/commit/9dd8c241653cba79b36331e1618e9ab44d209af1)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - relax globals peer dependency
+
+- [`128e222`](https://github.com/acdh-oeaw/eslint-config/commit/128e222c54aa039a439a8a87b316c61cd627afe2)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - handle .d.json.ts files
+
 ## 2.0.6
 
 ### Patch Changes
