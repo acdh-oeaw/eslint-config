@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.14
+
+### Patch Changes
+
+- Updated dependencies
+  [[`c5211b8`](https://github.com/acdh-oeaw/eslint-config/commit/c5211b80597664af4d40eda84ef4fa06cb4403bc)]:
+  - @acdh-oeaw/eslint-config-react@2.0.9
+
 ## 2.0.13
 
 ### Patch Changes
