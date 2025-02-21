@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-react
 
+## 2.0.9
+
+### Patch Changes
+
+- [`c5211b8`](https://github.com/acdh-oeaw/eslint-config/commit/c5211b80597664af4d40eda84ef4fa06cb4403bc)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add missing plugin
+
 ## 2.0.8
 
 ### Patch Changes
