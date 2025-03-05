@@ -18,7 +18,7 @@
 		"eslint-config-prettier": "^10.0.2",
 		"eslint-plugin-vue": "^10.0.0",
 		"eslint-plugin-vuejs-accessibility": "^2.4.1",
-		"vue-eslint-parser": "^10.1.0"
+		"vue-eslint-parser": "^10.1.1"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"

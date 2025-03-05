@@ -59,6 +59,7 @@ const config = ts.config(
 			"i18n.ts",
 			"lib/i18n.ts",
 			"lib/i18n/get-request-config.ts",
+			"lib/i18n/request.ts",
 		],
 		rules: {
 			"import-x/no-default-export": "off",

@@ -20,7 +20,7 @@
 		"@next/eslint-plugin-next": "^14.2.8 || ^15.0.0"
 	},
 	"devDependencies": {
-		"@next/eslint-plugin-next": "^15.1.7",
+		"@next/eslint-plugin-next": "^15.2.1",
 		"@types/eslint": "^9.6.1",
 		"globals": "^16.0.0"
 	}
