@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 2.0.10
+
+### Patch Changes
+
+- Updated dependencies
+  [[`a09b56b`](https://github.com/acdh-oeaw/eslint-config/commit/a09b56b11c63426a60a8e9ffa0111f99e907b2b4)]:
+  - @acdh-oeaw/eslint-config@2.0.8
+
 ## 2.0.9
 
 ### Patch Changes

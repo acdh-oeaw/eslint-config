@@ -1,5 +1,18 @@
 # @acdh-oeaw/eslint-config-mdx
 
+## 1.1.0
+
+### Minor Changes
+
+- [`ab5ec96`](https://github.com/acdh-oeaw/eslint-config/commit/ab5ec96c105e1c368ff67389a33bb4fa3e983ecc)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - drop eslint-plugin-markdown dependency
+
+### Patch Changes
+
+- Updated dependencies
+  [[`a09b56b`](https://github.com/acdh-oeaw/eslint-config/commit/a09b56b11c63426a60a8e9ffa0111f99e907b2b4)]:
+  - @acdh-oeaw/eslint-config@2.0.8
+
 ## 1.0.7
 
 ### Patch Changes
