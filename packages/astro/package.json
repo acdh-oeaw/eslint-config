@@ -23,8 +23,6 @@
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"@types/eslint": "^9.6.1",
-		"@types/eslint-config-prettier": "^6.11.3",
 		"globals": "^16.0.0"
 	}
 }

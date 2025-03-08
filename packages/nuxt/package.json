@@ -15,14 +15,13 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"@nuxt/eslint-plugin": "^1.1.0"
+		"@nuxt/eslint-plugin": "^1.2.0"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*",
 		"@acdh-oeaw/eslint-config-vue": "workspace:*"
 	},
 	"devDependencies": {
-		"@types/eslint": "^9.6.1",
 		"globals": "^16.0.0"
 	}
 }
