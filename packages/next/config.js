@@ -56,9 +56,6 @@ const config = ts.config(
 			"app/**/template.@(ts|tsx)",
 			"app/**/twitter-image.@(ts|tsx)",
 
-			"i18n.ts",
-			"lib/i18n.ts",
-			"lib/i18n/get-request-config.ts",
 			"lib/i18n/request.ts",
 		],
 		rules: {

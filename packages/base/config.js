@@ -73,14 +73,7 @@ const config = ts.config(
 			// "import-x/parsers:": {
 			// 	'@typescript-eslint/parser': [".ts", ".tsx"]
 			// },
-			"import-x/resolver-next": [
-				// TODO: consider https://github.com/9romise/eslint-import-resolver-oxc
-				createTypeScriptImportResolver({
-					alwaysTryTypes: true,
-					// extensions: [".js", ".ts", ".tsx"],
-					project: true,
-				}),
-			],
+			"import-x/resolver-next": [createTypeScriptImportResolver()],
 		},
 		rules: {
 			"import-x/first": "error",
