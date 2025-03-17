@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-playwright
 
+## 2.0.10
+
+### Patch Changes
+
+- Updated dependencies
+  [[`48229cc`](https://github.com/acdh-oeaw/eslint-config/commit/48229cca45e00debd83378ffab2b7ae1732c3d52)]:
+  - @acdh-oeaw/eslint-config@2.0.9
+
 ## 2.0.9
 
 ### Patch Changes
