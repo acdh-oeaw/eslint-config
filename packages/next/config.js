@@ -1,14 +1,9 @@
-import { FlatCompat } from "@eslint/eslintrc";
-// import nextPlugin from "@next/eslint-plugin-next";
+import nextPlugin from "@next/eslint-plugin-next";
 import globals from "globals";
 import ts from "typescript-eslint";
 
-const compat = new FlatCompat({
-	baseDirectory: import.meta.dirname,
-});
-
 const config = ts.config(
-	...compat.extends("plugin:@next/eslint-plugin-next/core-web-vitals"),
+	nextPlugin.flatConfig.coreWebVitals,
 	{
 		name: "acdh-oeaw/next-config",
 		rules: {
@@ -64,7 +59,14 @@ const config = ts.config(
 	},
 	{
 		name: "@acdh-oeaw/next-config/node-globals",
-		files: ["next.config.*", "config/env.config.*", "scripts/**", "**/actions/**"],
+		files: [
+			"next.config.*",
+			"config/env.config.*",
+			"lib/server/**",
+			"scripts/**",
+			"**/_actions/**",
+			"**/actions/**",
+		],
 		languageOptions: {
 			globals: {
 				...globals.nodeBuiltin,
@@ -73,7 +75,14 @@ const config = ts.config(
 	},
 	{
 		name: "@acdh-oeaw/next-config/browser-globals",
-		ignores: ["next.config.*", "config/env.config.*", "scripts/**", "**/actions/**"],
+		ignores: [
+			"next.config.*",
+			"config/env.config.*",
+			"scripts/**",
+			"lib/server/**",
+			"**/_actions/**",
+			"**/actions/**",
+		],
 		languageOptions: {
 			globals: {
 				...globals.browser,
