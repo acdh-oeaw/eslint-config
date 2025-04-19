@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.17
+
+### Patch Changes
+
+- [`967de57`](https://github.com/acdh-oeaw/eslint-config/commit/967de572ee368e9c1a032a09cebc001af36c6561)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - mark \_actions and lib/server folders
+  as node.js environments
+
 ## 2.0.16
 
 ### Patch Changes
