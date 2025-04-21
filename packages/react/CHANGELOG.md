@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-react
 
+## 2.0.12
+
+### Patch Changes
+
+- [`1b5c080`](https://github.com/acdh-oeaw/eslint-config/commit/1b5c0805933bed5ee435acbb8540d556f5c0770e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump react-hooks plugin
+
 ## 2.0.11
 
 ### Patch Changes
