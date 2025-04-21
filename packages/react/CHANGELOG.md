@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-react
 
+## 2.0.13
+
+### Patch Changes
+
+- [`d2b0326`](https://github.com/acdh-oeaw/eslint-config/commit/d2b0326d3cd37f9e29f16bf8fac1c30c6a934226)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update config for react-compiler
+
 ## 2.0.12
 
 ### Patch Changes
