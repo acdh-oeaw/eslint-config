@@ -1,4 +1,6 @@
-packages:
-  - ./packages/*
 onlyBuiltDependencies:
   - simple-git-hooks
+  - unrs-resolver
+
+packages:
+  - ./packages/*
