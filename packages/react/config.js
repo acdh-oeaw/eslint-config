@@ -3,7 +3,6 @@ import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
-// import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(

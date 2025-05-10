@@ -1,8 +1,7 @@
 import storybookPlugin from "eslint-plugin-storybook";
-// import globals from "globals";
 import ts from "typescript-eslint";
 
-const config = ts.config(...storybookPlugin.configs["flat/recommended"], {
+const config = ts.config(storybookPlugin.configs["flat/recommended"], {
 	name: "acdh-oeaw/storybook-config",
 	files: ["**/*.stories.@(ts|tsx)", "config/storybook/**/*.@(ts|tsx)"],
 	rules: {

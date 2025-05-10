@@ -5,7 +5,7 @@ import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(
-	...astroPlugin.configs.recommended,
+	astroPlugin.configs.recommended,
 	/** Does not currently play well with other configs which also add `eslint-plugin-jsx-a11y`. */
 	// ...astroPlugin.configs["jsx-a11y-recommended"],
 	jsxA11yPlugin.flatConfigs.recommended,
@@ -52,7 +52,7 @@ const config = ts.config(
 				projectService: null,
 			},
 		},
-		...ts.configs.disableTypeChecked,
+		extends: ts.configs.disableTypeChecked,
 	},
 	{
 		name: "@acdh-oeaw/astro-config/node-globals",

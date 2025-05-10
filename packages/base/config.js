@@ -9,8 +9,8 @@ import ts from "typescript-eslint";
 
 const config = ts.config(
 	js.configs.recommended,
-	...ts.configs.strictTypeChecked,
-	...ts.configs.stylisticTypeChecked,
+	ts.configs.strictTypeChecked,
+	ts.configs.stylisticTypeChecked,
 	importPlugin.flatConfigs.recommended,
 	importPlugin.flatConfigs.typescript,
 	{

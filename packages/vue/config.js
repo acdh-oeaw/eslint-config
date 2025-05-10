@@ -2,12 +2,11 @@ import tsParser from "@typescript-eslint/parser";
 import prettier from "eslint-config-prettier";
 import vuePlugin from "eslint-plugin-vue";
 import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
-// import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(
-	...vuePlugin.configs["flat/recommended"],
-	...vueAccessibilityPlugin.configs["flat/recommended"],
+	vuePlugin.configs["flat/recommended"],
+	vueAccessibilityPlugin.configs["flat/recommended"],
 	{
 		name: "acdh-oeaw/vue-config",
 		files: ["**/*.vue"],
@@ -62,7 +61,7 @@ const config = ts.config(
 		/**
 		 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
 		 */
-		...ts.configs.disableTypeChecked,
+		extends: ts.configs.disableTypeChecked,
 	},
 	prettier,
 );
