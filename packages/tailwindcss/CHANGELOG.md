@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 3.0.0
+
+### Major Changes
+
+- [`8dc7e48`](https://github.com/acdh-oeaw/eslint-config/commit/8dc7e485d664be3bcc3f9c9a2a0b1a37f4305113)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - support tailwind v4
+
 ## 2.0.11
 
 ### Patch Changes
