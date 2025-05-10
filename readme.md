@@ -23,37 +23,31 @@ npm install -D eslint globals @acdh-oeaw/eslint-config
 npm install -D @acdh-oeaw/eslint-config-react @acdh-oeaw/eslint-config-next
 ```
 
-Add the configs to `eslint.config.js`:
+Add the configs to `eslint.config.ts`:
 
-```js
-/** @typedef {import("typescript-eslint").Config} Config */
-
+```ts
 import baseConfig from "@acdh-oeaw/eslint-config";
 import nextConfig from "@acdh-oeaw/eslint-config-next";
 import reactConfig from "@acdh-oeaw/eslint-config-react";
+import { config } from "typescript-eslint";
 
-/** @type {Config} */
-const config = [...baseConfig, ...reactConfig, ...nextConfig];
-
-export default config;
+export default = config(baseConfig, reactConfig, nextConfig);
 ```
 
 Optionally, enable additional rules:
 
-```js
-/** @typedef {import("typescript-eslint").Config} Config */
-
+```ts
 import baseConfig from "@acdh-oeaw/eslint-config";
 import nextConfig from "@acdh-oeaw/eslint-config-next";
 import reactConfig from "@acdh-oeaw/eslint-config-react";
 import gitignore from "eslint-config-flat-gitignore";
+import { config } from "typescript-eslint";
 
-/** @type {Config} */
-const config = [
-	gitignore(),
-	...baseConfig,
-	...reactConfig,
-	...nextConfig,
+export default config = (
+	gitignore({ strict: false }),
+	baseConfig,
+	reactConfig,
+	nextConfig,
 	{
 		rules: {
 			"arrow-body-style": ["error", "always"],
@@ -64,9 +58,7 @@ const config = [
 			"react/jsx-sort-props": ["error", { reservedFirst: true }],
 		},
 	},
-];
-
-export default config;
+);
 ```
 
 ### How to install in Nuxt
@@ -91,21 +83,38 @@ export default defineNuxtConfig({
 });
 ```
 
-Pass our config to `withNuxt` in `eslint.config.js`:
+Pass our config to `withNuxt` in `eslint.config.ts`:
 
 ```ts
-/** @typedef {import("typescript-eslint").Config} Config */
-
 import baseConfig from "@acdh-oeaw/eslint-config";
 import nuxtConfig from "@acdh-oeaw/eslint-config-nuxt";
 import vueConfig from "@acdh-oeaw/eslint-config-vue";
+import { config } from "typescript-eslint";
 
 import { withNuxt } from "./.nuxt/eslint.config.mjs";
 
-/** @type {Config} */
-const config = [...baseConfig, ...vueConfig, ...nuxtConfig];
+export default withNuxt(config(baseConfig, vueConfig, nuxtConfig));
+```
 
-export default withNuxt(config);
+### How to set up with Tailwind CSS
+
+The tailwindcss config requires additional configuration:
+
+```ts
+import { resolve } from "node:path";
+
+import baseConfig from "@acdh-oeaw/eslint-config";
+import tailwindConfig from "@acdh-oeaw/eslint-config-tailwindcss";
+import { config } from "typescript-eslint";
+
+export default config(baseConfig, tailwindConfig, {
+	settings: {
+		tailwindcss: {
+			/** Absolute path to css file with `@import "tailwindcss";` */
+			config: resolve("./styles/index.css"),
+		},
+	},
+});
 ```
 
 ## How to use
@@ -121,6 +130,10 @@ Add a script to `package.json`:
 
 You can then run `npm run lint:check` to lint, and `npm run lint:fix` to fix auto-fixable errors.
 
+Note that `--cache` is not officially supported with `typescript-eslint`'s type-aware rules, because
+eslint processes single files, but type checking requires whole-program analysis. Enabling caching
+means you probably need to restart your editor's eslint plugin more often.
+
 ## How to run with Git hooks
 
 ```bash
@@ -132,7 +145,7 @@ To run the linter on every Git commit, add the following to package.json:
 ```json
 {
 	"scripts": {
-		"format:check": "prettier . --cache --check --ignore-path .gitignore",
+		"format:check": "prettier . --cache --check",
 		"format:fix": "npm run format:check -- --write",
 		"lint:check": "eslint . --cache",
 		"lint:fix": "npm run lint:check -- --fix",
