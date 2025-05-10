@@ -15,7 +15,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-tailwindcss": "^3.18.0"
+		"eslint-plugin-tailwindcss": "npm:@hyoban/eslint-plugin-tailwindcss@4.0.0-alpha.12"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
