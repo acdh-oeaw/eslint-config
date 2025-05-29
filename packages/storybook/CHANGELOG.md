@@ -1,5 +1,12 @@
 # @acdh-oeaw/eslint-config-storybook
 
+## 3.0.0
+
+### Major Changes
+
+- [`f93c2ee`](https://github.com/acdh-oeaw/eslint-config/commit/f93c2ee8c26a123874c23ad0103fa61dd87b567e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump storybook config to 9.0
+
 ## 2.0.10
 
 ### Patch Changes
