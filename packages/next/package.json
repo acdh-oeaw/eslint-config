@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-next",
-	"version": "2.0.19",
+	"version": "2.0.20",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
