@@ -30,6 +30,7 @@ const config = ts.config(
 			"**/*.d.json.ts",
 
 			"*.config.@(js|ts|tsx)",
+			"config/**/*.config.@(js|ts|tsx)",
 
 			"instrumentation.ts",
 			"middleware.ts",
