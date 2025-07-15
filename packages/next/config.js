@@ -42,7 +42,9 @@ const config = ts.config(
 			"app/**/apple-icon.@(ts|tsx)",
 			"app/**/default.@(ts|tsx)",
 			"app/**/error.@(ts|tsx)",
+			"app/**/forbidden.@(ts|tsx)",
 			"app/**/global-error.@(ts|tsx)",
+			"app/**/global-not-found.@(ts|tsx)",
 			"app/**/icon.@(ts|tsx)",
 			"app/**/layout.@(ts|tsx)",
 			"app/**/loading.@(ts|tsx)",
@@ -51,6 +53,7 @@ const config = ts.config(
 			"app/**/page.@(ts|tsx)",
 			"app/**/template.@(ts|tsx)",
 			"app/**/twitter-image.@(ts|tsx)",
+			"app/**/unauthorized.@(ts|tsx)",
 
 			"lib/i18n/request.ts",
 		],
