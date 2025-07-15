@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.21
+
+### Patch Changes
+
+- [`88ac8ce`](https://github.com/acdh-oeaw/eslint-config/commit/88ac8ce32bdc33b6d9d86980d48b1cc8d6463211)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add new page conventions to next.js
+  default export allow-list
+
 ## 2.0.20
 
 ### Patch Changes
