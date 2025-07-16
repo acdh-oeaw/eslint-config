@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-tailwindcss",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"licence": "MIT",
 	"type": "module",
 	"engines": {
