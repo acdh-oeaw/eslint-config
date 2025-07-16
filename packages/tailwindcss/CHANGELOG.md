@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 3.0.1
+
+### Patch Changes
+
+- [`3a57c06`](https://github.com/acdh-oeaw/eslint-config/commit/3a57c0636a599ae6b291800da2b587b505b44a3f)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - switch back to upstream tailwindcss
+  plugin version
+
 ## 3.0.0
 
 ### Major Changes
