@@ -1,17 +1,21 @@
+import astroParser from "astro-eslint-parser";
 import prettier from "eslint-config-prettier";
-import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import astroPlugin from "eslint-plugin-astro";
 import globals from "globals";
 import ts from "typescript-eslint";
 
 const config = ts.config(
 	astroPlugin.configs.recommended,
-	/** Does not currently play well with other configs which also add `eslint-plugin-jsx-a11y`. */
-	// ...astroPlugin.configs["jsx-a11y-recommended"],
-	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		name: "acdh-oeaw/astro-config",
 		files: ["**/*.astro"],
+		extends: [astroPlugin.configs["jsx-a11y-recommended"]],
+		languageOptions: {
+			parser: astroParser,
+			parserOptions: {
+				parser: ts.parser,
+			},
+		},
 		settings: {
 			/** @see https://github.com/ota-meshi/astro-eslint-parser/issues/259 */
 			"import-x/ignore": ["\\.astro$"],
