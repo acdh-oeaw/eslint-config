@@ -6,7 +6,7 @@
 		"node": "22.x",
 		"pnpm": "10.x"
 	},
-	"packageManager": "pnpm@10.10.0",
+	"packageManager": "pnpm@10.15.1",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
@@ -15,7 +15,7 @@
 		"format:check": "prettier . --cache --cache-location ./.prettiercache --check --ignore-path ./.gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
-		"setup": "is-ci || simple-git-hooks",
+		"setup": "is-in-ci || simple-git-hooks",
 		"types:check": "tsc --noEmit",
 		"validate": "run-p format:check types:check"
 	},
@@ -24,15 +24,15 @@
 		"@acdh-oeaw/prettier-config": "^2.0.1",
 		"@acdh-oeaw/tsconfig-lib": "^1.3.0",
 		"@changesets/changelog-github": "^0.5.1",
-		"@changesets/cli": "^2.29.3",
+		"@changesets/cli": "^2.29.6",
 		"@commitlint/cli": "^19.8.1",
-		"@types/node": "^22.15.17",
-		"is-ci": "^4.1.0",
-		"lint-staged": "^15.5.2",
-		"npm-run-all2": "^8.0.1",
-		"prettier": "^3.5.3",
-		"simple-git-hooks": "^2.13.0",
-		"typescript": "^5.8.3"
+		"@types/node": "^22.18.0",
+		"is-in-ci": "^2.0.0",
+		"lint-staged": "^16.1.6",
+		"npm-run-all2": "^8.0.4",
+		"prettier": "^3.6.2",
+		"simple-git-hooks": "^2.13.1",
+		"typescript": "^5.9.2"
 	},
 	"commitlint": {
 		"extends": "@acdh-oeaw/commitlint-config"
