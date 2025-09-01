@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 2.0.11
+
+### Patch Changes
+
+- [#74](https://github.com/acdh-oeaw/eslint-config/pull/74)
+  [`8bc8eef`](https://github.com/acdh-oeaw/eslint-config/commit/8bc8eef812b6b679322a7ee73b6823514e09cca3)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update astro parser config
+
 ## 2.0.10
 
 ### Patch Changes
