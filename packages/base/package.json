@@ -22,14 +22,18 @@
 		"eslint-plugin-import-x": "^4.11.1",
 		"eslint-plugin-regexp": "^2.7.0",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
-		"typescript-eslint": "^8.32.0"
+		"typescript-eslint": "^8.42.0"
 	},
 	"peerDependencies": {
+		"@eslint/config-helpers": "0.x",
 		"eslint": "9.x",
 		"globals": "16.x",
 		"typescript": "5.x"
 	},
 	"devDependencies": {
-		"globals": "^16.1.0"
+		"@eslint/config-helpers": "^0.3.1",
+		"eslint": "^9.34.0",
+		"globals": "^16.1.0",
+		"typescript": "^5.9.2"
 	}
 }
