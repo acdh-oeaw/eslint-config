@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 2.0.12
+
+### Patch Changes
+
+- [#78](https://github.com/acdh-oeaw/eslint-config/pull/78)
+  [`78dceca`](https://github.com/acdh-oeaw/eslint-config/commit/78dceca985596b33c911121092bcd05e3e467ce1)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix extends in astro config
+
 ## 2.0.11
 
 ### Patch Changes
