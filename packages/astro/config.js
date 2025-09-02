@@ -56,7 +56,7 @@ const config = ts.config(
 				projectService: null,
 			},
 		},
-		extends: ts.configs.disableTypeChecked,
+		extends: [ts.configs.disableTypeChecked],
 	},
 	{
 		name: "@acdh-oeaw/astro-config/node-globals",
