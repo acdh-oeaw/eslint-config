@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 2.0.13
+
+### Patch Changes
+
+- [#80](https://github.com/acdh-oeaw/eslint-config/pull/80)
+  [`c514e2b`](https://github.com/acdh-oeaw/eslint-config/commit/c514e2b589bfdcf2bd27bb73aaab141599218a4e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - docs: add troubleshooting section
+
 ## 2.0.12
 
 ### Patch Changes
