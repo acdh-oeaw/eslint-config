@@ -1,5 +1,5 @@
-import type { TSESLint } from "@typescript-eslint/utils";
+import type { ConfigWithExtends } from "@eslint/config-helpers";
 
-declare const config: TSESLint.FlatConfig.ConfigArray;
+declare const config: ConfigWithExtends;
 
 export default config;
