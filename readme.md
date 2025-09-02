@@ -199,3 +199,13 @@ You may also want to enable "Fix auto-fixable errors on Save" in `.vscode/settin
 	}
 }
 ```
+
+### Troubleshooting
+
+When using `pnpm`, you may need to add the following to `.npmrc` to make the VS Code `eslint`
+extension work correctly:
+
+```
+# https://github.com/microsoft/vscode-eslint/issues/1986
+public-hoist-pattern[]=*eslint-plugin*
+```

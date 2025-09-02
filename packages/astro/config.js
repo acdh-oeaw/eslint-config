@@ -1,4 +1,3 @@
-import astroParser from "astro-eslint-parser";
 import prettier from "eslint-config-prettier";
 import astroPlugin from "eslint-plugin-astro";
 import globals from "globals";
@@ -9,13 +8,6 @@ const config = ts.config(
 	{
 		name: "acdh-oeaw/astro-config",
 		files: ["**/*.astro"],
-		extends: [astroPlugin.configs["jsx-a11y-recommended"]],
-		languageOptions: {
-			parser: astroParser,
-			parserOptions: {
-				parser: ts.parser,
-			},
-		},
 		settings: {
 			/** @see https://github.com/ota-meshi/astro-eslint-parser/issues/259 */
 			"import-x/ignore": ["\\.astro$"],
@@ -23,10 +15,15 @@ const config = ts.config(
 				"astro-eslint-parser": [".astro"],
 			},
 		},
+	},
+	astroPlugin.configs["jsx-a11y-recommended"],
+	{
+		name: "acdh-oeaw/astro-config/jsx-a11y",
+		files: ["**/*.astro"],
 		rules: {
-			"jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
-			"jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
-			"jsx-a11y/no-redundant-roles": [
+			"astro/jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
+			"astro/jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
+			"astro/jsx-a11y/no-redundant-roles": [
 				"error",
 				{
 					ul: ["list"],
