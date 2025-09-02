@@ -1,10 +1,11 @@
 import tsParser from "@typescript-eslint/parser";
+import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
 import vuePlugin from "eslint-plugin-vue";
 import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
 import ts from "typescript-eslint";
 
-const config = ts.config(
+const config = defineConfig(
 	vuePlugin.configs["flat/recommended"],
 	vueAccessibilityPlugin.configs["flat/recommended"],
 	{

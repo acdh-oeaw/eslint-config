@@ -1,7 +1,7 @@
+import { defineConfig } from "eslint/config";
 import * as mdx from "eslint-plugin-mdx";
-import ts from "typescript-eslint";
 
-const config = ts.config(
+const config = defineConfig(
 	{
 		name: "acdh-oeaw/mdx-config",
 		extends: mdx.flat,

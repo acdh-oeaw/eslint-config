@@ -1,10 +1,10 @@
+import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import solidJsPlugin from "eslint-plugin-solid";
 import globals from "globals";
-import ts from "typescript-eslint";
 
-const config = ts.config(
+const config = defineConfig(
 	solidJsPlugin.configs["flat/typescript"],
 	jsxA11yPlugin.flatConfigs.recommended,
 	{

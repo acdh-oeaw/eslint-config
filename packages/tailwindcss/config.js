@@ -1,7 +1,7 @@
+import { defineConfig } from "eslint/config";
 import tailwindcssPlugin from "eslint-plugin-tailwindcss";
-import ts from "typescript-eslint";
 
-const config = ts.config(tailwindcssPlugin.configs["flat/recommended"], {
+const config = defineConfig(tailwindcssPlugin.configs["flat/recommended"], {
 	name: "acdh-oeaw/tailwindcss-config",
 	settings: {
 		tailwindcss: {

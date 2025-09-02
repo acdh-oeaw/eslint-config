@@ -1,8 +1,8 @@
+import { defineConfig } from "eslint/config";
 import nodePlugin from "eslint-plugin-n";
 import globals from "globals";
-import ts from "typescript-eslint";
 
-const config = ts.config(
+const config = defineConfig(
 	{
 		languageOptions: {
 			globals: {
