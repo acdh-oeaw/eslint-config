@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-playwright
 
+## 2.0.12
+
+### Patch Changes
+
+- [#86](https://github.com/acdh-oeaw/eslint-config/pull/86)
+  [`cc48871`](https://github.com/acdh-oeaw/eslint-config/commit/cc488714b703266ed04451a3954ec2cbb6469783)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix config extends
+
 ## 2.0.11
 
 ### Patch Changes

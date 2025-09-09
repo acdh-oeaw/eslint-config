@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-mdx
 
+## 1.1.3
+
+### Patch Changes
+
+- [#86](https://github.com/acdh-oeaw/eslint-config/pull/86)
+  [`cc48871`](https://github.com/acdh-oeaw/eslint-config/commit/cc488714b703266ed04451a3954ec2cbb6469783)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix config extends
+
 ## 1.1.2
 
 ### Patch Changes
