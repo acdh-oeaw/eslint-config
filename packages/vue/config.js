@@ -62,7 +62,7 @@ const config = defineConfig(
 		/**
 		 * @see https://github.com/vuejs/vue-eslint-parser/issues/104
 		 */
-		extends: ts.configs.disableTypeChecked,
+		extends: [ts.configs.disableTypeChecked],
 	},
 	prettier,
 );
