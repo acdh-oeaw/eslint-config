@@ -29,8 +29,7 @@ const config = defineConfig(
 			"**/*.d.ts",
 			"**/*.d.json.ts",
 
-			"*.config.@(js|ts|tsx)",
-			"config/**/*.config.@(js|ts|tsx)",
+			"**/*.config.@(js|ts|tsx)",
 
 			"instrumentation.ts",
 			"middleware.ts",
