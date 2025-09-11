@@ -1,5 +1,14 @@
 # @acdh-oeaw/eslint-config-next
 
+## 2.0.23
+
+### Patch Changes
+
+- [#88](https://github.com/acdh-oeaw/eslint-config/pull/88)
+  [`0ca5ca3`](https://github.com/acdh-oeaw/eslint-config/commit/0ca5ca34edcd85cb6ee928a5c3743262c5dd5b61)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow default exports in all config
+  files
+
 ## 2.0.22
 
 ### Patch Changes
