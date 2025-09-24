@@ -2,6 +2,9 @@
 	"name": "@acdh-oeaw/eslint-config-storybook",
 	"version": "3.0.1",
 	"licence": "MIT",
+	"repository": {
+		"url": "https://github.com/acdh-oeaw/eslint-config"
+	},
 	"type": "module",
 	"engines": {
 		"node": ">=20.11"
