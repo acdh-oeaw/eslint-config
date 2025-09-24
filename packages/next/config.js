@@ -3,7 +3,7 @@ import { defineConfig } from "eslint/config";
 import globals from "globals";
 
 const config = defineConfig(
-	nextPlugin.flatConfig.coreWebVitals,
+	nextPlugin.configs["core-web-vitals"],
 	{
 		name: "acdh-oeaw/next-config",
 		rules: {
