@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 3.0.0
+
+### Major Changes
+
+- [#91](https://github.com/acdh-oeaw/eslint-config/pull/91)
+  [`0628973`](https://github.com/acdh-oeaw/eslint-config/commit/06289730128a719e92ef321d0883e1fba4a2a118)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - adapt to new nextjs config exports
+
 ## 2.0.23
 
 ### Patch Changes
