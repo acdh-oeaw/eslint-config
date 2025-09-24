@@ -1,9 +1,6 @@
 {
 	"private": true,
 	"license": "MIT",
-	"repository": {
-		"url": "https://github.com/acdh-oeaw/eslint-config"
-	},
 	"type": "module",
 	"engines": {
 		"node": "22.x",
