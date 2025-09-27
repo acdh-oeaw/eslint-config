@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-react
 
+## 3.0.0
+
+### Major Changes
+
+- [#98](https://github.com/acdh-oeaw/eslint-config/pull/98)
+  [`cda359c`](https://github.com/acdh-oeaw/eslint-config/commit/cda359c285a6134fc06ef4406bc538e4f7e12c85)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - switch to new eslint-react plugin
+
 ## 2.0.14
 
 ### Patch Changes
