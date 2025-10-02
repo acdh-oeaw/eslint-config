@@ -37,6 +37,8 @@ const config = defineConfig(
 			/** @see {@link https://github.com/Rel1cx/eslint-react/issues/900} */
 			"react/function-component-definition": "error",
 
+			/** Prefer `set-state-in-effect` rule from official `react-hooks` plugin. */
+			"@eslint-react/hooks-extra/no-direct-set-state-in-use-effect": "off",
 			"@eslint-react/jsx-shorthand-boolean": ["error", -1],
 			"@eslint-react/no-unnecessary-key": "error",
 			"@eslint-react/no-useless-fragment": ["error"],
