@@ -1,5 +1,23 @@
 # @acdh-oeaw/eslint-config-react
 
+## 3.0.1
+
+### Patch Changes
+
+- [#103](https://github.com/acdh-oeaw/eslint-config/pull/103)
+  [`7a55b9c`](https://github.com/acdh-oeaw/eslint-config/commit/7a55b9c336d35515678e44bdb152e71ef6983e5e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enable react compiler rules
+
+- [#102](https://github.com/acdh-oeaw/eslint-config/pull/102)
+  [`740f600`](https://github.com/acdh-oeaw/eslint-config/commit/740f600b352e54a5802b8fecb3ffce0dc2a52d37)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - prefer official set-state-in-effect
+  over hooks-extra/no-direct-set-state-in-use-effect
+
+- [#100](https://github.com/acdh-oeaw/eslint-config/pull/100)
+  [`985d6af`](https://github.com/acdh-oeaw/eslint-config/commit/985d6afd741ff57c000df8ed7a41345a62101221)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - support react v19.2 with
+  eslint-plugin-react-hooks v6.1
+
 ## 3.0.0
 
 ### Major Changes
