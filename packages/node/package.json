@@ -15,7 +15,8 @@
 	},
 	"files": [
 		"./config.d.ts",
-		"./config.js"
+		"./config.js",
+		"../../license"
 	],
 	"dependencies": {
 		"eslint-plugin-n": "^17.18.0"

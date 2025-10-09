@@ -15,7 +15,8 @@
 	},
 	"files": [
 		"./config.d.ts",
-		"./config.js"
+		"./config.js",
+		"../../license"
 	],
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*",

@@ -15,7 +15,8 @@
 	},
 	"files": [
 		"./config.d.ts",
-		"./config.js"
+		"./config.js",
+		"../../license"
 	],
 	"dependencies": {
 		"@eslint/eslintrc": "^3.3.1",

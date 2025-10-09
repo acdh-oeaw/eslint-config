@@ -15,7 +15,8 @@
 	},
 	"files": [
 		"./config.d.ts",
-		"./config.js"
+		"./config.js",
+		"../../license"
 	],
 	"dependencies": {
 		"@nuxt/eslint-plugin": "^1.3.0"
