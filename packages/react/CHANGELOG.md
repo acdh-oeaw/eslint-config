@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-react
 
+## 3.0.2
+
+### Patch Changes
+
+- [#104](https://github.com/acdh-oeaw/eslint-config/pull/104)
+  [`7481e0e`](https://github.com/acdh-oeaw/eslint-config/commit/7481e0e519dd4e50d48bce4a46debd66de17e9c2)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump eslint-plugin-react-hooks to v7
+
 ## 3.0.1
 
 ### Patch Changes
