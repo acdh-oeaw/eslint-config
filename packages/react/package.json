@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-react",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"licence": "MIT",
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/eslint-config"
