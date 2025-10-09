@@ -15,8 +15,7 @@
 	},
 	"files": [
 		"./config.d.ts",
-		"./config.js",
-		"../../license"
+		"./config.js"
 	],
 	"dependencies": {
 		"@eslint-react/eslint-plugin": "^2.0.6",

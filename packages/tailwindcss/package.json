@@ -15,8 +15,7 @@
 	},
 	"files": [
 		"./config.d.ts",
-		"./config.js",
-		"../../license"
+		"./config.js"
 	],
 	"dependencies": {
 		"eslint-plugin-tailwindcss": "beta"
