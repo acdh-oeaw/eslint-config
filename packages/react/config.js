@@ -6,8 +6,8 @@ import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 
 const config = defineConfig(
-	reactHooksPlugin.configs["recommended-latest"],
 	reactXPlugin.configs["recommended-type-checked"],
+	reactHooksPlugin.configs.flat.recommended,
 	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		name: "acdh-oeaw/react-config",
