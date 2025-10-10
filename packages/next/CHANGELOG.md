@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-next
 
+## 4.0.3
+
+### Patch Changes
+
+- [#109](https://github.com/acdh-oeaw/eslint-config/pull/109)
+  [`826e4be`](https://github.com/acdh-oeaw/eslint-config/commit/826e4beec28f94d8bfb422f6684206907b5f3fbf)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - set next.js 16.x as peer dependency
+
 ## 4.0.2
 
 ### Patch Changes
