@@ -1,7 +1,7 @@
 import { defineConfig } from "eslint/config";
 import tailwindcssPlugin from "eslint-plugin-better-tailwindcss";
 
-const config = defineConfig(tailwindcssPlugin.configs["flat/recommended"], {
+const config = defineConfig(tailwindcssPlugin.configs.recommended, {
 	name: "acdh-oeaw/tailwindcss-config",
 	settings: {
 		"better-tailwindcss": {
@@ -23,7 +23,11 @@ const config = defineConfig(tailwindcssPlugin.configs["flat/recommended"], {
 		},
 	},
 	rules: {
-		"tailwindcss/migration-from-tailwind-2": "off",
+		"enforce-canonical-classes": "error",
+		"enforce-consistent-important-position": "off",
+		"enforce-consistent-line-wrapping": "off",
+		"enforce-consistent-variable-syntax": "error",
+		"enforce-shorthand-classes": "warn",
 	},
 });
 
