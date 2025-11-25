@@ -18,7 +18,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-better-tailwindcss": "^3.6.1"
+		"eslint-plugin-better-tailwindcss": "^3.7.11"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
