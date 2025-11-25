@@ -1,0 +1,30 @@
+{
+	"name": "@acdh-oeaw/eslint-config-svelte",
+	"version": "0.0.2",
+	"licence": "MIT",
+	"repository": {
+		"url": "https://github.com/acdh-oeaw/eslint-config"
+	},
+	"type": "module",
+	"engines": {
+		"node": ">=20.11"
+	},
+	"main": "./config.js",
+	"exports": {
+		".": "./config.js"
+	},
+	"files": [
+		"./config.d.ts",
+		"./config.js"
+	],
+	"dependencies": {
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.13.0"
+	},
+	"peerDependencies": {
+		"@acdh-oeaw/eslint-config": "workspace:*"
+	},
+	"devDependencies": {
+		"globals": "^16.5.0"
+	}
+}

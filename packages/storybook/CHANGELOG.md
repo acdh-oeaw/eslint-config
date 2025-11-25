@@ -1,5 +1,34 @@
 # @acdh-oeaw/eslint-config-storybook
 
+## 4.0.0
+
+### Major Changes
+
+- [#116](https://github.com/acdh-oeaw/eslint-config/pull/116)
+  [`5459b26`](https://github.com/acdh-oeaw/eslint-config/commit/5459b261953913e1bd2834a0e29de9b7659b871e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update to storybook 10
+
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  [[`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)]:
+  - @acdh-oeaw/eslint-config@2.0.11
+
+## 3.0.1
+
+### Patch Changes
+
+- [#82](https://github.com/acdh-oeaw/eslint-config/pull/82)
+  [`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - migrate from depreacted ts.config() to
+  defineConfig()
+
+- Updated dependencies
+  [[`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)]:
+  - @acdh-oeaw/eslint-config@2.0.10
+
 ## 3.0.0
 
 ### Major Changes

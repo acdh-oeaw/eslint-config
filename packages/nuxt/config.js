@@ -1,6 +1,6 @@
 // import nuxtConfig from "@next/eslint-config";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
-import ts from "typescript-eslint";
 
 /**
  * Note that we *don't* add the nuxt eslint config here.
@@ -9,7 +9,7 @@ import ts from "typescript-eslint";
  * Make sure to set `standalone` to `false` when setting up `@nuxt/eslint` since we provide
  * our own js, ts, and vue configs.
  */
-const config = ts.config(
+const config = defineConfig(
 	{
 		name: "acdh-oeaw/nuxt-config",
 		files: ["**/*.vue"],

@@ -1,7 +1,10 @@
 {
 	"name": "@acdh-oeaw/eslint-config-playwright",
-	"version": "2.0.10",
+	"version": "2.0.13",
 	"licence": "MIT",
+	"repository": {
+		"url": "https://github.com/acdh-oeaw/eslint-config"
+	},
 	"type": "module",
 	"engines": {
 		"node": ">=20.11"
@@ -15,12 +18,12 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-playwright": "^2.2.0"
+		"eslint-plugin-playwright": "^2.3.0"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^16.1.0"
+		"globals": "^16.5.0"
 	}
 }

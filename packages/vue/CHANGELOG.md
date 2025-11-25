@@ -1,5 +1,34 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 2.0.15
+
+### Patch Changes
+
+- Updated dependencies
+  [[`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)]:
+  - @acdh-oeaw/eslint-config@2.0.11
+
+## 2.0.14
+
+### Patch Changes
+
+- [#86](https://github.com/acdh-oeaw/eslint-config/pull/86)
+  [`cc48871`](https://github.com/acdh-oeaw/eslint-config/commit/cc488714b703266ed04451a3954ec2cbb6469783)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix config extends
+
+## 2.0.13
+
+### Patch Changes
+
+- [#82](https://github.com/acdh-oeaw/eslint-config/pull/82)
+  [`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - migrate from depreacted ts.config() to
+  defineConfig()
+
+- Updated dependencies
+  [[`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)]:
+  - @acdh-oeaw/eslint-config@2.0.10
+
 ## 2.0.12
 
 ### Patch Changes

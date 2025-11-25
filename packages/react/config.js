@@ -1,19 +1,19 @@
+import { defineConfig } from "eslint/config";
 import reactXPlugin from "@eslint-react/eslint-plugin";
 import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
-import ts from "typescript-eslint";
 
-const config = ts.config(
-	reactPlugin.configs.flat.recommended,
-	reactPlugin.configs.flat["jsx-runtime"],
-	reactHooksPlugin.configs.recommended,
-	// TODO: enable preset and de-duplicate rules from eslint-plugin-react
-	// reactXPlugin.configs["recommended-type-checked"],
+const config = defineConfig(
+	reactXPlugin.configs["strict-type-checked"],
+	reactHooksPlugin.configs.flat.recommended,
 	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		name: "acdh-oeaw/react-config",
+		plugins: {
+			react: reactPlugin,
+		},
 		settings: {
 			react: {
 				version: "detect",
@@ -32,25 +32,15 @@ const config = ts.config(
 				},
 			],
 
+			/** Not availble in `@eslint-react/eslint-plugin`. */
 			"react/boolean-prop-naming": "error",
-			"react/button-has-type": "error",
+			/** @see {@link https://github.com/Rel1cx/eslint-react/issues/739} */
 			"react/function-component-definition": "error",
-			"react/jsx-boolean-value": ["error", "always"],
-			"react/jsx-no-leaked-render": "error",
-			"react/jsx-no-target-blank": "off",
-			"react/jsx-no-useless-fragment": "error",
-			// "react/jsx-sort-props": ["error", { reservedFirst: true }],
-			"react/no-unstable-nested-components": "error",
-			"react/prop-types": "off",
-		},
-	},
-	{
-		name: "acdh-oeaw/react-x-config",
-		plugins: {
-			"react-x": reactXPlugin,
-		},
-		rules: {
-			"react-x/no-missing-key": "error",
+
+			/** Prefer `set-state-in-effect` rule from official `react-hooks` plugin. */
+			"@eslint-react/hooks-extra/no-direct-set-state-in-use-effect": "off",
+			"@eslint-react/jsx-shorthand-boolean": ["error", -1],
+			"@eslint-react/dom/no-unsafe-target-blank": "off",
 		},
 	},
 	prettier,

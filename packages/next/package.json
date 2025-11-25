@@ -1,7 +1,10 @@
 {
 	"name": "@acdh-oeaw/eslint-config-next",
-	"version": "2.0.20",
+	"version": "4.0.4",
 	"licence": "MIT",
+	"repository": {
+		"url": "https://github.com/acdh-oeaw/eslint-config"
+	},
 	"type": "module",
 	"engines": {
 		"node": ">=20.11"
@@ -17,10 +20,10 @@
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*",
 		"@acdh-oeaw/eslint-config-react": "workspace:*",
-		"@next/eslint-plugin-next": "^15.0.0"
+		"@next/eslint-plugin-next": "15.x || 16.x"
 	},
 	"devDependencies": {
-		"@next/eslint-plugin-next": "^15.3.2",
-		"globals": "^16.1.0"
+		"@next/eslint-plugin-next": "^16.0.4",
+		"globals": "^16.5.0"
 	}
 }

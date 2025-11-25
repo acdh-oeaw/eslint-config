@@ -1,9 +1,9 @@
 import nextPlugin from "@next/eslint-plugin-next";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
-import ts from "typescript-eslint";
 
-const config = ts.config(
-	nextPlugin.flatConfig.coreWebVitals,
+const config = defineConfig(
+	nextPlugin.configs["core-web-vitals"],
 	{
 		name: "acdh-oeaw/next-config",
 		rules: {
@@ -29,8 +29,7 @@ const config = ts.config(
 			"**/*.d.ts",
 			"**/*.d.json.ts",
 
-			"*.config.@(js|ts|tsx)",
-			"config/**/*.config.@(js|ts|tsx)",
+			"**/*.config.@(js|ts|tsx)",
 
 			"instrumentation.ts",
 			"middleware.ts",

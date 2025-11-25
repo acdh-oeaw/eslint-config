@@ -1,5 +1,88 @@
 # @acdh-oeaw/eslint-config-next
 
+## 4.0.4
+
+### Patch Changes
+
+- Updated dependencies
+  [[`606d563`](https://github.com/acdh-oeaw/eslint-config/commit/606d5633d7e7a8c04d9b8042f11a495f7f1801a2),
+  [`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)]:
+  - @acdh-oeaw/eslint-config-react@3.0.3
+  - @acdh-oeaw/eslint-config@2.0.11
+
+## 4.0.3
+
+### Patch Changes
+
+- [#109](https://github.com/acdh-oeaw/eslint-config/pull/109)
+  [`826e4be`](https://github.com/acdh-oeaw/eslint-config/commit/826e4beec28f94d8bfb422f6684206907b5f3fbf)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - set next.js 16.x as peer dependency
+
+## 4.0.2
+
+### Patch Changes
+
+- Updated dependencies
+  [[`7481e0e`](https://github.com/acdh-oeaw/eslint-config/commit/7481e0e519dd4e50d48bce4a46debd66de17e9c2)]:
+  - @acdh-oeaw/eslint-config-react@3.0.2
+
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies
+  [[`7a55b9c`](https://github.com/acdh-oeaw/eslint-config/commit/7a55b9c336d35515678e44bdb152e71ef6983e5e),
+  [`740f600`](https://github.com/acdh-oeaw/eslint-config/commit/740f600b352e54a5802b8fecb3ffce0dc2a52d37),
+  [`985d6af`](https://github.com/acdh-oeaw/eslint-config/commit/985d6afd741ff57c000df8ed7a41345a62101221)]:
+  - @acdh-oeaw/eslint-config-react@3.0.1
+
+## 4.0.0
+
+### Patch Changes
+
+- Updated dependencies
+  [[`cda359c`](https://github.com/acdh-oeaw/eslint-config/commit/cda359c285a6134fc06ef4406bc538e4f7e12c85)]:
+  - @acdh-oeaw/eslint-config-react@3.0.0
+
+## 3.0.0
+
+### Major Changes
+
+- [#91](https://github.com/acdh-oeaw/eslint-config/pull/91)
+  [`0628973`](https://github.com/acdh-oeaw/eslint-config/commit/06289730128a719e92ef321d0883e1fba4a2a118)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - adapt to new nextjs config exports
+
+## 2.0.23
+
+### Patch Changes
+
+- [#88](https://github.com/acdh-oeaw/eslint-config/pull/88)
+  [`0ca5ca3`](https://github.com/acdh-oeaw/eslint-config/commit/0ca5ca34edcd85cb6ee928a5c3743262c5dd5b61)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - allow default exports in all config
+  files
+
+## 2.0.22
+
+### Patch Changes
+
+- [#82](https://github.com/acdh-oeaw/eslint-config/pull/82)
+  [`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - migrate from depreacted ts.config() to
+  defineConfig()
+
+- Updated dependencies
+  [[`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)]:
+  - @acdh-oeaw/eslint-config-react@2.0.14
+  - @acdh-oeaw/eslint-config@2.0.10
+
+## 2.0.21
+
+### Patch Changes
+
+- [`88ac8ce`](https://github.com/acdh-oeaw/eslint-config/commit/88ac8ce32bdc33b6d9d86980d48b1cc8d6463211)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add new page conventions to next.js
+  default export allow-list
+
 ## 2.0.20
 
 ### Patch Changes

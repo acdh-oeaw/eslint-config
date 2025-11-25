@@ -1,5 +1,50 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 2.0.15
+
+### Patch Changes
+
+- Updated dependencies
+  [[`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)]:
+  - @acdh-oeaw/eslint-config@2.0.11
+
+## 2.0.14
+
+### Patch Changes
+
+- [#82](https://github.com/acdh-oeaw/eslint-config/pull/82)
+  [`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - migrate from depreacted ts.config() to
+  defineConfig()
+
+- Updated dependencies
+  [[`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)]:
+  - @acdh-oeaw/eslint-config@2.0.10
+
+## 2.0.13
+
+### Patch Changes
+
+- [#80](https://github.com/acdh-oeaw/eslint-config/pull/80)
+  [`c514e2b`](https://github.com/acdh-oeaw/eslint-config/commit/c514e2b589bfdcf2bd27bb73aaab141599218a4e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - docs: add troubleshooting section
+
+## 2.0.12
+
+### Patch Changes
+
+- [#78](https://github.com/acdh-oeaw/eslint-config/pull/78)
+  [`78dceca`](https://github.com/acdh-oeaw/eslint-config/commit/78dceca985596b33c911121092bcd05e3e467ce1)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix extends in astro config
+
+## 2.0.11
+
+### Patch Changes
+
+- [#74](https://github.com/acdh-oeaw/eslint-config/pull/74)
+  [`8bc8eef`](https://github.com/acdh-oeaw/eslint-config/commit/8bc8eef812b6b679322a7ee73b6823514e09cca3)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update astro parser config
+
 ## 2.0.10
 
 ### Patch Changes

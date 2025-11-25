@@ -1,5 +1,64 @@
 # @acdh-oeaw/eslint-config-react
 
+## 3.0.3
+
+### Patch Changes
+
+- [#112](https://github.com/acdh-oeaw/eslint-config/pull/112)
+  [`606d563`](https://github.com/acdh-oeaw/eslint-config/commit/606d5633d7e7a8c04d9b8042f11a495f7f1801a2)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enable strict preset
+
+- Updated dependencies
+  [[`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)]:
+  - @acdh-oeaw/eslint-config@2.0.11
+
+## 3.0.2
+
+### Patch Changes
+
+- [#104](https://github.com/acdh-oeaw/eslint-config/pull/104)
+  [`7481e0e`](https://github.com/acdh-oeaw/eslint-config/commit/7481e0e519dd4e50d48bce4a46debd66de17e9c2)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - bump eslint-plugin-react-hooks to v7
+
+## 3.0.1
+
+### Patch Changes
+
+- [#103](https://github.com/acdh-oeaw/eslint-config/pull/103)
+  [`7a55b9c`](https://github.com/acdh-oeaw/eslint-config/commit/7a55b9c336d35515678e44bdb152e71ef6983e5e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enable react compiler rules
+
+- [#102](https://github.com/acdh-oeaw/eslint-config/pull/102)
+  [`740f600`](https://github.com/acdh-oeaw/eslint-config/commit/740f600b352e54a5802b8fecb3ffce0dc2a52d37)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - prefer official set-state-in-effect
+  over hooks-extra/no-direct-set-state-in-use-effect
+
+- [#100](https://github.com/acdh-oeaw/eslint-config/pull/100)
+  [`985d6af`](https://github.com/acdh-oeaw/eslint-config/commit/985d6afd741ff57c000df8ed7a41345a62101221)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - support react v19.2 with
+  eslint-plugin-react-hooks v6.1
+
+## 3.0.0
+
+### Major Changes
+
+- [#98](https://github.com/acdh-oeaw/eslint-config/pull/98)
+  [`cda359c`](https://github.com/acdh-oeaw/eslint-config/commit/cda359c285a6134fc06ef4406bc538e4f7e12c85)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - switch to new eslint-react plugin
+
+## 2.0.14
+
+### Patch Changes
+
+- [#82](https://github.com/acdh-oeaw/eslint-config/pull/82)
+  [`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - migrate from depreacted ts.config() to
+  defineConfig()
+
+- Updated dependencies
+  [[`ae6a195`](https://github.com/acdh-oeaw/eslint-config/commit/ae6a1955372b952499562824d7b24e79bca6f8a9)]:
+  - @acdh-oeaw/eslint-config@2.0.10
+
 ## 2.0.13
 
 ### Patch Changes

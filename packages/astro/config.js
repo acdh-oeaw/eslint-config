@@ -1,14 +1,11 @@
+import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
-import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import astroPlugin from "eslint-plugin-astro";
 import globals from "globals";
 import ts from "typescript-eslint";
 
-const config = ts.config(
+const config = defineConfig(
 	astroPlugin.configs.recommended,
-	/** Does not currently play well with other configs which also add `eslint-plugin-jsx-a11y`. */
-	// ...astroPlugin.configs["jsx-a11y-recommended"],
-	jsxA11yPlugin.flatConfigs.recommended,
 	{
 		name: "acdh-oeaw/astro-config",
 		files: ["**/*.astro"],
@@ -19,10 +16,15 @@ const config = ts.config(
 				"astro-eslint-parser": [".astro"],
 			},
 		},
+	},
+	astroPlugin.configs["jsx-a11y-recommended"],
+	{
+		name: "acdh-oeaw/astro-config/jsx-a11y",
+		files: ["**/*.astro"],
 		rules: {
-			"jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
-			"jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
-			"jsx-a11y/no-redundant-roles": [
+			"astro/jsx-a11y/anchor-is-valid": ["error", { components: ["Link"] }],
+			"astro/jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
+			"astro/jsx-a11y/no-redundant-roles": [
 				"error",
 				{
 					ul: ["list"],
@@ -52,7 +54,7 @@ const config = ts.config(
 				projectService: null,
 			},
 		},
-		extends: ts.configs.disableTypeChecked,
+		extends: [ts.configs.disableTypeChecked],
 	},
 	{
 		name: "@acdh-oeaw/astro-config/node-globals",

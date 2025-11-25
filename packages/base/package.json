@@ -1,7 +1,10 @@
 {
 	"name": "@acdh-oeaw/eslint-config",
-	"version": "2.0.9",
+	"version": "2.0.11",
 	"licence": "MIT",
+	"repository": {
+		"url": "https://github.com/acdh-oeaw/eslint-config"
+	},
 	"type": "module",
 	"engines": {
 		"node": ">=20.11"
@@ -16,20 +19,24 @@
 	],
 	"dependencies": {
 		"@eslint/eslintrc": "^3.3.1",
-		"@eslint/js": "^9.26.0",
-		"eslint-config-prettier": "^10.1.5",
-		"eslint-import-resolver-typescript": "^4.3.4",
-		"eslint-plugin-import-x": "^4.11.1",
-		"eslint-plugin-regexp": "^2.7.0",
+		"@eslint/js": "^9.39.1",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-import-resolver-typescript": "^4.4.4",
+		"eslint-plugin-import-x": "^4.16.1",
+		"eslint-plugin-regexp": "^2.10.0",
 		"eslint-plugin-simple-import-sort": "^12.1.1",
-		"typescript-eslint": "^8.32.0"
+		"typescript-eslint": "^8.48.0"
 	},
 	"peerDependencies": {
+		"@eslint/config-helpers": "0.x",
 		"eslint": "9.x",
 		"globals": "16.x",
 		"typescript": "5.x"
 	},
 	"devDependencies": {
-		"globals": "^16.1.0"
+		"@eslint/config-helpers": "^0.5.0",
+		"eslint": "^9.39.1",
+		"globals": "^16.5.0",
+		"typescript": "^5.9.3"
 	}
 }
