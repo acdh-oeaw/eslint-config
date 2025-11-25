@@ -1,16 +1,33 @@
 import { defineConfig } from "eslint/config";
-import tailwindcssPlugin from "eslint-plugin-tailwindcss";
+import tailwindcssPlugin from "eslint-plugin-better-tailwindcss";
 
-const config = defineConfig(tailwindcssPlugin.configs["flat/recommended"], {
+const config = defineConfig(tailwindcssPlugin.configs.recommended, {
 	name: "acdh-oeaw/tailwindcss-config",
 	settings: {
-		tailwindcss: {
-			callees: ["cn", "styles"],
-			ignoredKeys: ["combinations", "defaults"],
+		"better-tailwindcss": {
+			callees: [
+				"cn",
+				[
+					"styles",
+					[
+						{
+							match: "strings",
+						},
+						{
+							match: "objectValues",
+							pathPattern: "^combinations\\[\\d+\\]\\[1\\]$",
+						},
+					],
+				],
+			],
 		},
 	},
 	rules: {
-		"tailwindcss/migration-from-tailwind-2": "off",
+		"enforce-canonical-classes": "error",
+		"enforce-consistent-important-position": "off",
+		"enforce-consistent-line-wrapping": "off",
+		"enforce-consistent-variable-syntax": "error",
+		"enforce-shorthand-classes": "warn",
 	},
 });
 

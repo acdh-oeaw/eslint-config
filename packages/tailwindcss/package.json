@@ -18,7 +18,7 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-tailwindcss": "beta"
+		"eslint-plugin-better-tailwindcss": "^4.0.0-beta.4"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
