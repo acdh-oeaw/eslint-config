@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-storybook",
-	"version": "3.0.2",
+	"version": "4.0.0",
 	"licence": "MIT",
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/eslint-config"
