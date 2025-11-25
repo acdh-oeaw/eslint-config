@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.11
+
+### Patch Changes
+
+- [#113](https://github.com/acdh-oeaw/eslint-config/pull/113)
+  [`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - update deps
+
 ## 2.0.10
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-svelte",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"licence": "MIT",
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/eslint-config"

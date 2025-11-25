@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-vue
 
+## 2.0.15
+
+### Patch Changes
+
+- Updated dependencies
+  [[`1636bb6`](https://github.com/acdh-oeaw/eslint-config/commit/1636bb619db4c48a603ff4e71b6de3c09f0a2368)]:
+  - @acdh-oeaw/eslint-config@2.0.11
+
 ## 2.0.14
 
 ### Patch Changes
