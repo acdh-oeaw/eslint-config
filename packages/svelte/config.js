@@ -6,6 +6,7 @@ import ts from "typescript-eslint";
 
 const config = defineConfig(
 	sveltePlugin.configs["flat/recommended"],
+	sveltePlugin.configs.prettier,
 	{
 		name: "acdh-oeaw/svelte-config",
 		files: ["**/*.svelte", "**/*.svelte.ts"],
