@@ -23,12 +23,12 @@
 		"validate": "run-p format:check types:check"
 	},
 	"devDependencies": {
-		"@acdh-oeaw/commitlint-config": "^2.0.0",
+		"@acdh-oeaw/commitlint-config": "^3.0.0",
 		"@acdh-oeaw/prettier-config": "^2.0.1",
 		"@acdh-oeaw/tsconfig-lib": "^1.3.0",
 		"@changesets/changelog-github": "^0.5.1",
 		"@changesets/cli": "^2.29.7",
-		"@commitlint/cli": "^19.8.1",
+		"@commitlint/cli": "^20.1.0",
 		"@types/node": "^24.10.1",
 		"is-in-ci": "^2.0.0",
 		"lint-staged": "^16.2.7",
