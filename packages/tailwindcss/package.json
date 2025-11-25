@@ -1,6 +1,6 @@
 {
 	"name": "@acdh-oeaw/eslint-config-tailwindcss",
-	"version": "3.0.3",
+	"version": "4.0.0",
 	"licence": "MIT",
 	"repository": {
 		"url": "https://github.com/acdh-oeaw/eslint-config"
