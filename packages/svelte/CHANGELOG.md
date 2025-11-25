@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-svelte
 
+## 0.0.3
+
+### Patch Changes
+
+- [#118](https://github.com/acdh-oeaw/eslint-config/pull/118)
+  [`f6cc5ad`](https://github.com/acdh-oeaw/eslint-config/commit/f6cc5adbc40b730ef1503f9869ab6a6a6ac22bbc)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - enable svelte prettier config
+
 ## 0.0.2
 
 ### Patch Changes
