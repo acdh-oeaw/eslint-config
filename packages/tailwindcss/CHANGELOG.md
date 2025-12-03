@@ -1,5 +1,14 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 4.0.1
+
+### Patch Changes
+
+- [#121](https://github.com/acdh-oeaw/eslint-config/pull/121)
+  [`0ca96f3`](https://github.com/acdh-oeaw/eslint-config/commit/0ca96f3abf528bc3fc673c6939c9b0e64c0fa5e8)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - work around missing flat config support
+  in better-tailwindcss plugin
+
 ## 4.0.0
 
 ### Major Changes
