@@ -1,8 +1,16 @@
 import { defineConfig } from "eslint/config";
 import tailwindcssPlugin from "eslint-plugin-better-tailwindcss";
 
-const config = defineConfig(tailwindcssPlugin.configs.recommended, {
+/**
+ * Need to define plugin and rules explicitly until proper flat config support.
+ *
+ * @see {@link https://github.com/schoero/eslint-plugin-better-tailwindcss/pull/244}
+ */
+const config = defineConfig({
 	name: "acdh-oeaw/tailwindcss-config",
+	plugins: {
+		"better-tailwindcss": tailwindcssPlugin,
+	},
 	settings: {
 		"better-tailwindcss": {
 			callees: [
@@ -23,11 +31,11 @@ const config = defineConfig(tailwindcssPlugin.configs.recommended, {
 		},
 	},
 	rules: {
-		"enforce-canonical-classes": "error",
-		"enforce-consistent-important-position": "off",
-		"enforce-consistent-line-wrapping": "off",
-		"enforce-consistent-variable-syntax": "error",
-		"enforce-shorthand-classes": "warn",
+		...tailwindcssPlugin.configs.recommended.rules,
+		"better-tailwindcss/enforce-canonical-classes": "error",
+		"better-tailwindcss/enforce-consistent-important-position": "off",
+		"better-tailwindcss/enforce-consistent-line-wrapping": "off",
+		"better-tailwindcss/enforce-consistent-variable-syntax": "error",
 	},
 });
 
