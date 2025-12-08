@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 4.0.2
+
+### Patch Changes
+
+- [#123](https://github.com/acdh-oeaw/eslint-config/pull/123)
+  [`f47c6d2`](https://github.com/acdh-oeaw/eslint-config/commit/f47c6d2ddf2532175257023916b7ae044fbbbe30)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - extend tailwind preset
+
 ## 4.0.1
 
 ### Patch Changes
