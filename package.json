@@ -9,7 +9,7 @@
 			"onFail": "download"
 		}
 	},
-	"packageManager": "pnpm@10.23.0",
+	"packageManager": "pnpm@10.25.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
