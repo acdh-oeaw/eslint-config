@@ -46,7 +46,7 @@ const config = defineConfig({
 	},
 	rules: {
 		"better-tailwindcss/enforce-canonical-classes": "error",
-		"better-tailwindcss/enforce-consistent-important-position": "off",
+		"better-tailwindcss/enforce-consistent-class-order": ["error", { order: "improved" }],
 		"better-tailwindcss/enforce-consistent-line-wrapping": "off",
 		"better-tailwindcss/enforce-consistent-variable-syntax": "error",
 	},
