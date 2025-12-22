@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 4.0.3
+
+### Patch Changes
+
+- [#125](https://github.com/acdh-oeaw/eslint-config/pull/125)
+  [`db892d3`](https://github.com/acdh-oeaw/eslint-config/commit/db892d344273338597c27d1f65719830ab58348e)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - fix callees for styles objects
+
 ## 4.0.2
 
 ### Patch Changes
