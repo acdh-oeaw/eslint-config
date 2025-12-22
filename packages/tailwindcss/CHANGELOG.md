@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-tailwindcss
 
+## 4.1.0
+
+### Minor Changes
+
+- [#128](https://github.com/acdh-oeaw/eslint-config/pull/128)
+  [`1750d3c`](https://github.com/acdh-oeaw/eslint-config/commit/1750d3c20d328173785653e96ef29feb1442a1c6)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - switch to strict class order
+
 ## 4.0.3
 
 ### Patch Changes
