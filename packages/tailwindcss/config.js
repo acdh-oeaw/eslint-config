@@ -1,5 +1,7 @@
 import { defineConfig } from "eslint/config";
 import tailwindcssPlugin from "eslint-plugin-better-tailwindcss";
+import { getDefaultCallees } from "eslint-plugin-better-tailwindcss/api/defaults";
+import { MatcherType } from "eslint-plugin-better-tailwindcss/api/types";
 
 const config = defineConfig({
 	name: "acdh-oeaw/tailwindcss-config",
@@ -7,16 +9,35 @@ const config = defineConfig({
 	settings: {
 		"better-tailwindcss": {
 			callees: [
-				"cn",
+				...getDefaultCallees(),
+				[
+					"cn",
+					[
+						{
+							match: MatcherType.String,
+						},
+						{
+							match: MatcherType.ObjectValue,
+						},
+					],
+				],
 				[
 					"styles",
 					[
 						{
-							match: "strings",
+							match: MatcherType.String,
 						},
 						{
-							match: "objectValues",
-							pathPattern: "^combinations\\[\\d+\\]\\[1\\]$",
+							match: MatcherType.ObjectValue,
+							pathPattern: "^base$",
+						},
+						{
+							match: MatcherType.ObjectValue,
+							pathPattern: "^variants.*$",
+						},
+						{
+							match: MatcherType.ObjectValue,
+							pathPattern: String.raw`^combinations\[\d+\]\[1\]$`,
 						},
 					],
 				],
