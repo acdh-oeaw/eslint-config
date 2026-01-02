@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-mdx
 
+## 1.1.5
+
+### Patch Changes
+
+- Updated dependencies
+  [[`9f016b4`](https://github.com/acdh-oeaw/eslint-config/commit/9f016b4a9c407abb8edf3005c49c050e3545bd30)]:
+  - @acdh-oeaw/eslint-config@2.0.12
+
 ## 1.1.4
 
 ### Patch Changes

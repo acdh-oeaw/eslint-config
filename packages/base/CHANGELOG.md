@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.12
+
+### Patch Changes
+
+- [#132](https://github.com/acdh-oeaw/eslint-config/pull/132)
+  [`9f016b4`](https://github.com/acdh-oeaw/eslint-config/commit/9f016b4a9c407abb8edf3005c49c050e3545bd30)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - support globals v17 in peer deps
+
 ## 2.0.11
 
 ### Patch Changes
