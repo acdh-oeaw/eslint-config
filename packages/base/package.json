@@ -30,7 +30,7 @@
 	"peerDependencies": {
 		"@eslint/config-helpers": "0.x",
 		"eslint": "9.x",
-		"globals": "16.x",
+		"globals": "16.x || 17.x",
 		"typescript": "5.x"
 	},
 	"devDependencies": {
