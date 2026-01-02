@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config-astro
 
+## 2.0.16
+
+### Patch Changes
+
+- Updated dependencies
+  [[`9f016b4`](https://github.com/acdh-oeaw/eslint-config/commit/9f016b4a9c407abb8edf3005c49c050e3545bd30)]:
+  - @acdh-oeaw/eslint-config@2.0.12
+
 ## 2.0.15
 
 ### Patch Changes
