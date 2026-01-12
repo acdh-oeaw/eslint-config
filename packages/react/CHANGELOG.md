@@ -1,5 +1,14 @@
 # @acdh-oeaw/eslint-config-react
 
+## 3.0.5
+
+### Patch Changes
+
+- [#134](https://github.com/acdh-oeaw/eslint-config/pull/134)
+  [`bba0bff`](https://github.com/acdh-oeaw/eslint-config/commit/bba0bff947273157b8a1a9f6e669c61e55470426)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - add react key warnings which were
+  removed from upstream recommended preset
+
 ## 3.0.4
 
 ### Patch Changes
