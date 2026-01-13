@@ -7,13 +7,14 @@ Shared configuration presets for [`eslint`](https://eslint.org/).
 - `@acdh-oeaw/eslint-config-mdx`: additional recommended config for .mdx files
 - `@acdh-oeaw/eslint-config-next`: additional recommended config for Next.js projects
 - `@acdh-oeaw/eslint-config-node`: additional recommended config for Node.js projects
-- `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Nuxt 3 projects
+- `@acdh-oeaw/eslint-config-nuxt`: additional recommended config for Nuxt projects
 - `@acdh-oeaw/eslint-config-playwright`: additional recommended config for Playwright projects
 - `@acdh-oeaw/eslint-config-react`: additional recommended config for React projects
 - `@acdh-oeaw/eslint-config-solid`: additional recommended config for Solid projects
 - `@acdh-oeaw/eslint-config-storybook`: additional recommended config for Storybook projects
+- `@acdh-oeaw/eslint-config-svelte`: additional recommended config for Svelte projects
 - `@acdh-oeaw/eslint-config-tailwindcss`: additional recommended config for Tailwind CSS
-- `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue 3 projects
+- `@acdh-oeaw/eslint-config-vue`: additional recommended config for Vue projects
 
 ## How to install
 
