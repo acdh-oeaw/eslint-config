@@ -1,6 +1,6 @@
-import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
 import sveltePlugin from "eslint-plugin-svelte";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 import ts from "typescript-eslint";
 

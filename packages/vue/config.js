@@ -1,8 +1,8 @@
 import tsParser from "@typescript-eslint/parser";
-import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
 import vuePlugin from "eslint-plugin-vue";
 import vueAccessibilityPlugin from "eslint-plugin-vuejs-accessibility";
+import { defineConfig } from "eslint/config";
 import ts from "typescript-eslint";
 
 const config = defineConfig(

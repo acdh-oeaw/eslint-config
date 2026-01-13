@@ -1,5 +1,5 @@
-import { defineConfig } from "eslint/config";
 import nodePlugin from "eslint-plugin-n";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 
 const config = defineConfig(

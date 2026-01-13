@@ -1,5 +1,5 @@
-import { defineConfig } from "eslint/config";
 import playwrightPlugin from "eslint-plugin-playwright";
+import { defineConfig } from "eslint/config";
 
 const config = defineConfig({
 	name: "acdh-oeaw/playwright-config",
