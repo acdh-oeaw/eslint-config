@@ -1,7 +1,7 @@
-import { defineConfig } from "eslint/config";
 import tailwindcssPlugin from "eslint-plugin-better-tailwindcss";
 import { getDefaultCallees } from "eslint-plugin-better-tailwindcss/api/defaults";
 import { MatcherType } from "eslint-plugin-better-tailwindcss/api/types";
+import { defineConfig } from "eslint/config";
 
 const config = defineConfig({
 	name: "acdh-oeaw/tailwindcss-config",

@@ -1,6 +1,6 @@
-import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
 import astroPlugin from "eslint-plugin-astro";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 import ts from "typescript-eslint";
 

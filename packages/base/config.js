@@ -1,10 +1,10 @@
 import js from "@eslint/js";
-import { defineConfig } from "eslint/config";
 import prettier from "eslint-config-prettier";
 import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import importPlugin from "eslint-plugin-import-x";
 import * as regexpPlugin from "eslint-plugin-regexp";
 import importSortPlugin from "eslint-plugin-simple-import-sort";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 import ts from "typescript-eslint";
 

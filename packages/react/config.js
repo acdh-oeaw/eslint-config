@@ -1,9 +1,9 @@
-import { defineConfig } from "eslint/config";
 import reactXPlugin from "@eslint-react/eslint-plugin";
 import prettier from "eslint-config-prettier";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
+import { defineConfig } from "eslint/config";
 
 const config = defineConfig(
 	reactXPlugin.configs["strict-type-checked"],

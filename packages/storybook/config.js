@@ -1,5 +1,5 @@
-import { defineConfig } from "eslint/config";
 import storybookPlugin from "eslint-plugin-storybook";
+import { defineConfig } from "eslint/config";
 
 const config = defineConfig(storybookPlugin.configs["flat/recommended"], {
 	name: "acdh-oeaw/storybook-config",

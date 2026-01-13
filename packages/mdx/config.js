@@ -1,5 +1,5 @@
-import { defineConfig } from "eslint/config";
 import * as mdx from "eslint-plugin-mdx";
+import { defineConfig } from "eslint/config";
 
 const config = defineConfig(
 	{
