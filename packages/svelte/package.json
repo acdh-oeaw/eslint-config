@@ -19,12 +19,12 @@
 	],
 	"dependencies": {
 		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.13.0"
+		"eslint-plugin-svelte": "^3.14.0"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^16.5.0"
+		"globals": "^17.0.0"
 	}
 }
