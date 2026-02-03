@@ -88,6 +88,9 @@ const config = defineConfig(
 			"import-x/default": "off",
 			"import-x/named": "off",
 			"import-x/namespace": "off",
+
+			/** Will always contain false positives due to module resolution complexity. */
+			"import/no-unresolved": "off",
 		},
 	},
 	{
