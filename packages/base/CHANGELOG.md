@@ -1,5 +1,13 @@
 # @acdh-oeaw/eslint-config
 
+## 2.0.13
+
+### Patch Changes
+
+- [#141](https://github.com/acdh-oeaw/eslint-config/pull/141)
+  [`c202fe6`](https://github.com/acdh-oeaw/eslint-config/commit/c202fe623375fb2a3e0f037c7085998f72ba4c94)
+  Thanks [@stefanprobst](https://github.com/stefanprobst)! - disable import/no-unresolved
+
 ## 2.0.12
 
 ### Patch Changes
