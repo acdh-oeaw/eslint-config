@@ -1,6 +1,11 @@
 packages:
   - ./packages/*
+
 onlyBuiltDependencies:
   - esbuild
   - simple-git-hooks
   - unrs-resolver
+
+shellEmulator: true
+
+strictDepBuilds: true

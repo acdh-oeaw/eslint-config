@@ -2,7 +2,7 @@
 	"$schema": "./node_modules/oxfmt/configuration_schema.json",
 	"ignorePatterns": [],
 	"experimentalSortImports": {
-		"groups": [["side-effect"], ["builtin"], ["external"], ["internal", "subpath"], ["unknown"]]
+		"groups": [["side_effect"], ["builtin"], ["external"], ["internal", "subpath"], ["unknown"]]
 	},
 	"experimentalSortPackageJson": false,
 	"proseWrap": "always",

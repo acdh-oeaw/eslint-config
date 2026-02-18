@@ -7,7 +7,7 @@
 	},
 	"type": "module",
 	"engines": {
-		"node": ">=20.11"
+		"node": ">=24"
 	},
 	"main": "./config.js",
 	"exports": {
@@ -24,6 +24,6 @@
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^17.0.0"
+		"globals": "^17.3.0"
 	}
 }

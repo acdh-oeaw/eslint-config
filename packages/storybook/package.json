@@ -7,7 +7,7 @@
 	},
 	"type": "module",
 	"engines": {
-		"node": ">=20.11"
+		"node": ">=24"
 	},
 	"main": "./config.js",
 	"exports": {
@@ -18,12 +18,12 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-storybook": "^10.1.11"
+		"eslint-plugin-storybook": "^10.2.9"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^17.0.0"
+		"globals": "^17.3.0"
 	}
 }

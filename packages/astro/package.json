@@ -7,7 +7,7 @@
 	},
 	"type": "module",
 	"engines": {
-		"node": ">=20.11"
+		"node": ">=24"
 	},
 	"main": "./config.js",
 	"exports": {
@@ -19,13 +19,13 @@
 	],
 	"dependencies": {
 		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-astro": "^1.5.0",
+		"eslint-plugin-astro": "^1.6.0",
 		"eslint-plugin-jsx-a11y": "^6.10.2"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^17.0.0"
+		"globals": "^17.3.0"
 	}
 }

@@ -7,7 +7,7 @@
 	},
 	"type": "module",
 	"engines": {
-		"node": ">=20.11"
+		"node": ">=24"
 	},
 	"main": "./config.js",
 	"exports": {
@@ -23,7 +23,7 @@
 		"@next/eslint-plugin-next": "15.x || 16.x"
 	},
 	"devDependencies": {
-		"@next/eslint-plugin-next": "^16.1.1",
-		"globals": "^17.0.0"
+		"@next/eslint-plugin-next": "^16.1.6",
+		"globals": "^17.3.0"
 	}
 }
