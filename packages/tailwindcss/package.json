@@ -18,12 +18,12 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-better-tailwindcss": "^4.0.0"
+		"eslint-plugin-better-tailwindcss": "^4.3.2"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^17.0.0"
+		"globals": "^17.4.0"
 	}
 }

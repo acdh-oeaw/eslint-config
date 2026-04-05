@@ -18,12 +18,12 @@
 		"./config.js"
 	],
 	"dependencies": {
-		"eslint-plugin-playwright": "^2.5.0"
+		"eslint-plugin-playwright": "^2.10.1"
 	},
 	"peerDependencies": {
 		"@acdh-oeaw/eslint-config": "workspace:*"
 	},
 	"devDependencies": {
-		"globals": "^17.0.0"
+		"globals": "^17.4.0"
 	}
 }
