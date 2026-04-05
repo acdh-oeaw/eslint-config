@@ -34,15 +34,12 @@ const config = defineConfig(
 
 			/** Not availble in `@eslint-react/eslint-plugin`. */
 			"react/boolean-prop-naming": "error",
-			/** @see {@link https://github.com/Rel1cx/eslint-react/issues/739} */
-			"react/function-component-definition": "error",
-
+			"@eslint-react/function-component-definition": "error",
 			"@eslint-react/no-duplicate-key": "warn",
 			"@eslint-react/no-implicit-key": "warn",
 			"@eslint-react/no-unnecessary-key": "warn",
 			/** Prefer `set-state-in-effect` rule from official `react-hooks` plugin. */
 			"@eslint-react/hooks-extra/no-direct-set-state-in-use-effect": "off",
-			"@eslint-react/jsx-shorthand-boolean": ["error", -1],
 			"@eslint-react/dom/no-unsafe-target-blank": "off",
 		},
 	},
